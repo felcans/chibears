@@ -12,18 +12,18 @@ body {
 }
 
 a {
-  color: #0B162A;
+  color: #051C2C;
   transition: color .15s ease;
 }
 
 ::-moz-selection {
-  background: #0B162A;
+  background: #051C2C;
   text-shadow: none;
   color: #fff;
 }
 
 ::selection {
-  background: #0B162A;
+  background: #051C2C;
   text-shadow: none;
   color: #fff;
 }
@@ -46,14 +46,14 @@ body .content .text:hover,body .content textarea:hover,body .content input[type=
 }
 
 body .content .text:focus,body .content textarea:focus,body .content input[type=text]:focus,body .content input[type=password]:focus,.side .spacer input:active,body .content input[type=url]:focus {
-  border-color: #0B162A;
+  border-color: #051C2C;
   color: #292f34;
 }
 
 body .btn,body button,.c-btn-primary,.wiki-page .wiki-page-content .wiki_button {
   margin: 4px 16px 4px 0;
   padding: 0 16px;
-  background: #0B162A;
+  background: #051C2C;
   border: none;
   border-radius: 2px;
   color: #fff;
@@ -69,7 +69,7 @@ body .btn,body button,.c-btn-primary,.wiki-page .wiki-page-content .wiki_button 
 
 .btn:hover,button:hover,.c-btn-primary:hover,.wiki-page .wiki-page-content .wiki_button {
   color: #fff;
-  background: #158be2;
+  background: #152542;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
 }
 
@@ -93,7 +93,7 @@ body .btn,body button,.c-btn-primary,.wiki-page .wiki-page-content .wiki_button 
 }
 
 #sr-header-area {
-  background: rgba(0,0,0,0.08);
+  background: #051c2c;
   border: none;
   transition: all .15s ease;
   height: 24px;
@@ -357,7 +357,7 @@ body:not(.loggedin) #header-bottom-right {
 }
 
 #header .pagename {
-  font-size: 0;
+  display: none;
 }
 
 #header .pagename a {
@@ -389,7 +389,7 @@ body:not(.loggedin) #header-bottom-right {
   position: absolute;
   left: -16px;
   right: -384px;
-  background: rgba(0,0,0,0.24);
+  background: rgba(5,28,44,0.9);
   height: 42px;
   z-index: -1;
 }
@@ -430,6 +430,7 @@ body[class] > .content,body.listing-page[class] > .content {
   margin: 0;
   padding: 16px;
   position: relative;
+  border-bottom: 1px solid #d2d2d2;
 }
 
 .pinnable-content.pinned .link {
@@ -608,7 +609,7 @@ body > .content .link .rank,.rank-spacer {
 }
 
 .thumbnail[data-href-url*="reddit.com"] {
-  background: #0B162A url(%%spritesheet%%) -152px -104px;
+  background: #051C2C url(%%spritesheet%%) -152px -104px;
 }
 
 .thumbnail[data-href-url*="reddit.com"] img {
@@ -637,11 +638,11 @@ body > .content .link .rank,.rank-spacer {
 }
 
 body .content .sitetable .link .title a:hover {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .thing .title.loggedin.click,.thing .title.click,.thing .title.loggedin,.thing .title {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .content .thing .title:visited,.content .thing.visited .title {
@@ -649,7 +650,7 @@ body .content .sitetable .link .title a:hover {
 }
 
 .thing .title.loggedin.click:visited,.thing .title.click:visited {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .link .domain {
@@ -665,7 +666,7 @@ body .content .sitetable .link .title a:hover {
 }
 
 .link .domain a:hover {
-  color: #0B162A;
+  color: #051C2C;
   text-decoration: none;
 }
 
@@ -689,8 +690,8 @@ body .content .sitetable .link .title a:hover {
 }
 
 .expando-button:hover {
-  background-color: #0B162A;
-  border-color: #0B162A;
+  background-color: #051C2C;
+  border-color: #051C2C;
 }
 
 .expando-button.selftext.collapsed {
@@ -821,7 +822,7 @@ body .content .sitetable .link .title a:hover {
 }
 
 .link .entry .tagline a:hover {
-  color: #0B162A;
+  color: #051C2C;
   text-decoration: none;
 }
 
@@ -858,7 +859,7 @@ body .content .sitetable .link .title a:hover {
 }
 
 .tagline .userattrs .submitter {
-  background: #0B162A;
+  background: #051C2C;
 }
 
 .tagline .userattrs .friend {
@@ -903,7 +904,7 @@ body .content .sitetable .link .title a:hover {
 }
 
 .link .entry .buttons li a:hover {
-  color: #0B162A;
+  color: #051C2C;
   text-decoration: none;
 }
 
@@ -930,7 +931,7 @@ body .content .sitetable .link .title a:hover {
 }
 
 .link .entry .buttons li a.comments {
-  color: #0B162A;
+  color: #051C2C;
   font-weight: 700!important;
   transition: all .25s ease-in-out!important;
 }
@@ -1253,7 +1254,7 @@ body > .content .link.compressed .midcol {
 .flairselector h2 {
   margin-bottom: 4px;
   background: none;
-  color: #0B162A;
+  color: #051C2C;
   text-align: left;
   text-transform: capitalize;
   font-weight: 400;
@@ -1288,7 +1289,7 @@ body > .content .link.compressed .midcol {
 .flairoptionpane ul li .linkflair a.title {
   font-size: 18px!important;
   opacity: 100!important;
-  color: #0B162A!important;
+  color: #051C2C!important;
 }
 
 .flairselector form {
@@ -1309,7 +1310,7 @@ body > .content .link.compressed .midcol {
 .flairselector form .flairselection .linkflair a.title {
   font-size: 18px!important;
   opacity: 100!important;
-  color: #0B162A!important;
+  color: #051C2C!important;
   cursor: default;
 }
 
@@ -1323,7 +1324,7 @@ body > .content .link.compressed .midcol {
 .flairselector form .flairselection .flairremove a {
   visibility: visible;
   opacity: 100!important;
-  color: #0B162A!important;
+  color: #051C2C!important;
   margin-left: -4px;
   text-transform: capitalize;
 }
@@ -1587,7 +1588,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   padding: 8px 16px;
   line-height: 26px;
   border: none;
-  background-color: #0B162A;
+  background-color: #051C2C;
   color: #fff;
   border-radius: 2px;
 }
@@ -1986,7 +1987,7 @@ div.titlebox span.number:after {
 }
 
 .morelink {
-  background: #0B162A;
+  background: #051C2C;
   height: 36px;
   border-radius: 2px;
   font-size: 14px;
@@ -1999,11 +2000,11 @@ div.titlebox span.number:after {
 }
 
 .morelink:hover {
-  background: #158be2;
+  background: #152542;
 }
 
 .morelink:active {
-  background: #0066b2;
+  background: #152542;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
 }
 
@@ -2142,6 +2143,10 @@ div.titlebox span.number:after {
   font: 13px/1.45 Lato,Arial,sans-serif;
 }
 
+.side .md table {
+  width:100%;
+}
+
 .side .titlebox .md h1 {
   line-height: 18px;
   margin: .5em 0 0!important;
@@ -2155,7 +2160,7 @@ div.titlebox span.number:after {
   padding: 0 16px;
   width: 100%;
   border-radius: 2px;
-  background: #0B162A;
+  background: #051C2C;
   font: 12px/42px Lato,Arial,sans-serif;
   color: #fff;
   display: block;
@@ -2166,12 +2171,12 @@ div.titlebox span.number:after {
 }
 
 .side .titlebox .md h3 a:hover {
-  background: #158be2;
+  background: #152542;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
 }
 
 .side .titlebox .md h3 a:active {
-  background: #0066b2;
+  background: #152542;
   box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 }
 
@@ -2179,7 +2184,7 @@ div.titlebox span.number:after {
   padding: 0 16px;
   background: #FFF;
   border-radius: 2px;
-  color: #0B162A;
+  color: #051C2C;
   font-weight: 700;
   display: block;
   margin: 1.5em 0;
@@ -2231,7 +2236,7 @@ div.titlebox span.number:after {
 
 .sidebox.create .morelink a {
   font-size: 14px;
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .sidebox .spacer {
@@ -2304,7 +2309,7 @@ div.titlebox span.number:after {
 }
 
 .commentarea .menuarea .toggle a:hover,.help-hoverable:hover {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .help-hoverable {
@@ -2344,7 +2349,7 @@ div.titlebox span.number:after {
 }
 
 .usertext .bottom-area a.reddiquette {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .commentarea .usertext-edit .md {
@@ -2470,7 +2475,7 @@ div.titlebox span.number:after {
 }
 
 .comment .author:hover {
-  color: #0B162A;
+  color: #051C2C;
   text-decoration: none;
 }
 
@@ -2576,7 +2581,7 @@ div.titlebox span.number:after {
 }
 
 .res-nightmode .submit-page #url-field button,.res-nightmode .submit-page #newlink.submit.content .btn,.res-nightmode .sidebox.create .morelink {
-  background-color: #0B162A!important;
+  background-color: #051C2C!important;
 }
 
 .res-nightmode body .content .text,.res-nightmode body .content textarea,.res-nightmode body .content input[type="text"],.res-nightmode body .content input[type="password"],.res-nightmode body .content input[type="url"],.res-nightmode #newlink-with-image-upload .image-upload-drop-target {
@@ -2699,7 +2704,7 @@ body.mod-toolbox .tb-action-button {
 }
 
 .md a {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .md a:visited {
@@ -2745,18 +2750,18 @@ body.mod-toolbox .tb-action-button {
 }
 
 .comment .flat-list li a:hover {
-  color: #0B162A;
+  color: #051C2C;
   text-decoration: none;
 }
 
 .comment .flat-list li a[onclick*="reply"] {
-  color: #0B162A;
+  color: #051C2C;
   font-weight: 700;
   font-size: 11px;
 }
 
 .deepthread a {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .morecomments a {
@@ -2839,7 +2844,7 @@ body.mod-toolbox .tb-action-button {
 }
 
 .read-next .read-next-button {
-  background-color: #0B162A;
+  background-color: #051C2C;
   color: #fff;
   font: 10px/16px monospace;
   height: 16px;
@@ -2895,7 +2900,7 @@ body.mod-toolbox .tb-action-button {
   position: relative;
   padding: 0;
   border: none;
-  background: #0B162A;
+  background: #051C2C;
   border-radius: 2px;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
 }
@@ -2946,7 +2951,7 @@ body.mod-toolbox .tb-action-button {
 }
 
 .submit_text.enabled.roundfield {
-  background: #0B162A;
+  background: #051C2C;
 }
 
 .submit_text.enabled.roundfield .md {
@@ -3138,7 +3143,7 @@ body #newlink-with-image-upload .file-upload-button {
 }
 
 .combined-search-page .search-result .search-result-header .search-title {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .combined-search-page .search-result .search-result-meta {
@@ -3146,7 +3151,7 @@ body #newlink-with-image-upload .file-upload-button {
 }
 
 .combined-search-page .search-result a,.combined-search-page .search-result a > mark {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .combined-search-page .search-result-subreddit .search-subscribe-button {
@@ -3154,7 +3159,7 @@ body #newlink-with-image-upload .file-upload-button {
 }
 
 .combined-search-page .search-result-subreddit .search-subscribe-button .add,.combined-search-page .search-result-subreddit .search-subscribe-button .add:active {
-  background: #0B162A;
+  background: #051C2C;
   border: none;
   border-radius: 2px;
 }
@@ -3166,7 +3171,7 @@ body #newlink-with-image-upload .file-upload-button {
 }
 
 .combined-search-page .search-result .search-comments {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .search-result.has-thumbnail > .thumbnail {
@@ -3260,8 +3265,8 @@ body #newlink-with-image-upload .file-upload-button {
 
 .wiki-page .pageactions .wikiaction-current {
   padding: 10px 16px 9px;
-  border-bottom: 2px solid #0B162A;
-  color: #0B162A;
+  border-bottom: 2px solid #051C2C;
+  color: #051C2C;
 }
 
 .wiki-page .pageactions .wikiaction:hover,.wiki-page .pageactions .wikiaction-current:hover {
@@ -3308,7 +3313,7 @@ body #newlink-with-image-upload .file-upload-button {
 }
 
 .linefield .title {
-  color: #0B162A;
+  color: #051C2C;
   text-transform: capitalize;
   padding: 0;
 }
@@ -3326,7 +3331,7 @@ body #newlink-with-image-upload .file-upload-button {
 }
 
 .usertext .bottom-area a:hover {
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .pretty-form {
@@ -3357,7 +3362,7 @@ body #newlink-with-image-upload .file-upload-button {
 }
 
 .tabmenu li.selected a {
-  color: #0B162A;
+  color: #051C2C;
   background: none;
   border: none;
 }
@@ -3432,7 +3437,7 @@ ul.image-preview-list li {
 
 .subreddit-rules-page .subreddit-rule-buttons button,.subreddit-rules-page .subreddit-rule-add-form-buttons button,.subreddit-rules-page .form-buttons button,.subreddit-rule-delete-confirmation button {
   padding: 0 16px;
-  background: #0B162A;
+  background: #051C2C;
   border: none;
   border-radius: 2px;
   color: #fff;
@@ -3447,7 +3452,7 @@ ul.image-preview-list li {
 
 .subreddit-rules-page .subreddit-rule-buttons button:hover,.subreddit-rules-page .subreddit-rule-add-form-buttons button:hover,.subreddit-rules-page .form-buttons button:hover,.subreddit-rule-delete-confirmation button:hover {
   color: #fff;
-  background: #158be2;
+  background: #152542;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
 }
 
@@ -3716,7 +3721,7 @@ html.res-commentBoxes .comment {
 
 .res .RESshortcutside:hover,.res .RESDashboardToggle:hover {
   background-color: transparent;
-  color: #0B162A;
+  color: #051C2C;
 }
 
 .res #progressIndicator {
@@ -3877,290 +3882,92 @@ body.listing-page > .content,body.other-discussions-page > .content,.comments-pa
   margin: 10px;
 }
 
-#mail.havemail:before {
-  animation-name: toast;
-  animation-duration: 8s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  -webkit-animation-name: toast;
-  -webkit-animation-duration: 8s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease;
-}
-
-#mail.havemail:hover:before {
-  -webkit-animation-play-state: paused;
-  -moz-animation-play-state: paused;
-  -o-animation-play-state: paused;
-  animation-play-state: paused;
-}
-
-@-webkit-keyframes toast {
-  0% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-
-  20% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-
-  25% {
-      transform: translateY(-8px);
-      -webkit-transform: translateY(-8px);
-      opacity: 1;
-  }
-
-  27% {
-      transform: translateY(00px);
-      -webkit-transform: translateY(00px);
-      opacity: 1;
-  }
-
-  92% {
-      transform: translateY(00px);
-      -webkit-transform: translateY(00px);
-      opacity: 1;
-  }
-
-  97% {
-      transform: translateY(16px);
-      -webkit-transform: translateY(16px);
-      opacity: 1;
-  }
-
-  100% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-}
-
-@-o-keyframes toast {
-  0% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-
-  20% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-
-  25% {
-      transform: translateY(-8px);
-      -webkit-transform: translateY(-8px);
-      opacity: 1;
-  }
-
-  27% {
-      transform: translateY(00px);
-      -webkit-transform: translateY(00px);
-      opacity: 1;
-  }
-
-  92% {
-      transform: translateY(00px);
-      -webkit-transform: translateY(00px);
-      opacity: 1;
-  }
-
-  97% {
-      transform: translateY(16px);
-      -webkit-transform: translateY(16px);
-      opacity: 1;
-  }
-
-  100% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-}
-
-@-moz-keyframes toast {
-  0% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-
-  20% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-
-  25% {
-      transform: translateY(-8px);
-      -webkit-transform: translateY(-8px);
-      opacity: 1;
-  }
-
-  27% {
-      transform: translateY(00px);
-      -webkit-transform: translateY(00px);
-      opacity: 1;
-  }
-
-  92% {
-      transform: translateY(00px);
-      -webkit-transform: translateY(00px);
-      opacity: 1;
-  }
-
-  97% {
-      transform: translateY(16px);
-      -webkit-transform: translateY(16px);
-      opacity: 1;
-  }
-
-  100% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-}
-
-@keyframes toast {
-  0% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-
-  20% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-
-  25% {
-      transform: translateY(-8px);
-      -webkit-transform: translateY(-8px);
-      opacity: 1;
-  }
-
-  27% {
-      transform: translateY(00px);
-      -webkit-transform: translateY(00px);
-      opacity: 1;
-  }
-
-  92% {
-      transform: translateY(00px);
-      -webkit-transform: translateY(00px);
-      opacity: 1;
-  }
-
-  97% {
-      transform: translateY(16px);
-      -webkit-transform: translateY(16px);
-      opacity: 1;
-  }
-
-  100% {
-      transform: translateY(76px);
-      -webkit-transform: translateY(76px);
-      opacity: 0;
-  }
-}
-
-@-webkit-keyframes upvote {
-  0% {
-      transform: scale(0,0);
-      -webkit-transform: scale(0,0);
-      opacity: 1;
-  }
-
-  45% {
-      opacity: 1;
-  }
-
-  98% {
-      opacity: 0;
-  }
-
-  100% {
-      transform: scale(1.5,1.5);
-      -webkit-transform: scale(1.5,1.5);
-      opacity: 0;
-  }
-}
-
-@-moz-keyframes upvote {
-  0% {
-      transform: scale(0,0);
-      -webkit-transform: scale(0,0);
-      opacity: 1;
-  }
-
-  45% {
-      opacity: 1;
-  }
-
-  98% {
-      opacity: 0;
-  }
-
-  100% {
-      transform: scale(1.5,1.5);
-      -webkit-transform: scale(1.5,1.5);
-      opacity: 0;
-  }
-}
-
-@-o-keyframes upvote {
-  0% {
-      transform: scale(0,0);
-      -webkit-transform: scale(0,0);
-      opacity: 1;
-  }
-
-  45% {
-      opacity: 1;
-  }
-
-  98% {
-      opacity: 0;
-  }
-
-  100% {
-      transform: scale(1.5,1.5);
-      -webkit-transform: scale(1.5,1.5);
-      opacity: 0;
-  }
-}
-
-@keyframes upvote {
-  0% {
-      transform: scale(0,0);
-      -webkit-transform: scale(0,0);
-      opacity: 1;
-  }
-
-  45% {
-      opacity: 1;
-  }
-
-  98% {
-      opacity: 0;
-  }
-
-  100% {
-      transform: scale(1.5,1.5);
-      -webkit-transform: scale(1.5,1.5);
-      opacity: 0;
-  }
-}
-
 /*
   End of Naut
   Add your customizations and addons below!
 -------------------------------------------------------------------------- */
 
+/*-------------------------------------------------------
+/                       Team Logos
+/-------------------------------------------------------*/
+a[href="/ARI"]:before,a[href$="/r/azcardinals"]:before,a[href="/ATL"]:before,a[href$="/r/falcons"]:before,a[href="/BAL"]:before,a[href$="/r/ravens"]:before,a[href="/BUF"]:before,a[href$="/r/buffalobills"]:before,a[href="/CAR"]:before,a[href$="/r/panthers"]:before,a[href="/CHI"]:before,a[href$="/r/chibears"]:before,a[href="/CIN"]:before,a[href$="/r/cinbengals"]:before,a[href$="/r/bengals"]:before,a[href="/CLE"]:before,a[href$="/r/browns"]:before,a[href="/DAL"]:before,a[href$="/r/cowboys"]:before,a[href="/DEN"]:before,a[href$="/r/denverbroncos"]:before,a[href="/DET"]:before,a[href$="/r/detroitlions"]:before,a[href="/GB"]:before,a[href$="/r/greenbaypackers"]:before,a[href="/HOU"]:before,a[href$="/r/texans"]:before,a[href="/IND"]:before,a[href$="/r/colts"]:before,a[href="/JAC"]:before,a[href$="/r/jaguars"]:before,a[href="/KC"]:before,a[href$="/r/kansascitychiefs"]:before,a[href="/MIA"]:before,a[href$="/r/miamidolphins"]:before,a[href="/MIN"]:before,a[href$="/r/minnesotavikings"]:before,a[href="/NE"]:before,a[href$="/r/patriots"]:before,a[href="/NO"]:before,a[href$="/r/saints"]:before,a[href="/NYG"]:before,a[href$="/r/nygiants"]:before,a[href="/NYJ"]:before,a[href$="/r/nyjets"]:before,a[href="/OAK"]:before,a[href$="/r/oaklandraiders"]:before,a[href="/PHI"]:before,a[href$="/r/eagles"]:before,a[href="/PIT"]:before,a[href$="/r/steelers"]:before,a[href="/SD"]:before,a[href$="/r/chargers"]:before,a[href="/SF"]:before,a[href$="/r/49ers"]:before,a[href="/SEA"]:before,a[href$="/r/seahawks"]:before,a[href="/LA"]:before,a[href$="/r/losangelesrams"]:before,a[href="/TB"]:before,a[href$="/r/buccaneers"]:before,a[href="/TEN"]:before,a[href$="/r/tennesseetitans"]:before,a[href="/WAS"]:before,a[href$="/r/redskins"]:before,a[href="/NFC"]:before,a[href$="/r/thenfc"]:before,a[href="/AFC"]:before,a[href$="/r/afc"]:before,a[href="/OIL"]:before{
+    width:20px;
+    height:20px;
+    display:inline-block;
+    background-repeat:no-repeat;
+    background-image:url(%%nfl-teams%%);
+    background-position:-9999px -9999px;
+    vertical-align:middle;
+    margin-right:3px;
+    content:""
+}
+a[href="/ARI"]:before,a[href$="/r/azcardinals"]:before{ background-position:0 -0px!important }
+a[href="/ARI"]:hover:before,a[href$="/r/azcardinals"]:hover:before{ background-position:-20px 0!important }
+a[href="/ATL"]:before,a[href$="/r/falcons"]:before{ background-position:0 -20px!important }
+a[href="/ATL"]:hover:before,a[href$="/r/falcons"]:hover:before{ background-position:-20px -20px!important }
+a[href="/BAL"]:before,a[href$="/r/ravens"]:before{ background-position:0 -40px!important }
+a[href="/BAL"]:hover:before,a[href$="/r/ravens"]:hover:before{ background-position:-20px -40px!important }
+a[href="/BUF"]:before,a[href$="/r/buffalobills"]:before{ background-position:0 -60px!important }
+a[href="/BUF"]:hover:before,a[href$="/r/buffalobills"]:hover:before{ background-position:-20px -60px!important }
+a[href="/CAR"]:before,a[href$="/r/panthers"]:before{ background-position:0 -80px!important }
+a[href="/CAR"]:hover:before,a[href$="/r/panthers"]:hover:before{ background-position:-20px -80px!important }
+a[href="/CHI"]:before,a[href$="/r/chibears"]:before{ background-position:0 -100px!important }
+a[href="/CHI"]:hover:before,a[href$="/r/chibears"]:hover:before{ background-position:-20px -100px!important }
+a[href="/CIN"]:before,a[href$="/r/cinbengals"]:before,a[href$="/r/bengals"]:before{ background-position:0 -120px!important }
+a[href="/CIN"]:hover:before,a[href$="/r/bengals"]:hover:before{ background-position:-20px -120px!important }
+a[href="/CLE"]:before,a[href$="/r/browns"]:before{ background-position:0 -140px!important }
+a[href="/CLE"]:hover:before,a[href$="/r/browns"]:hover:before{ background-position:-20px -140px!important }
+a[href="/DAL"]:before,a[href$="/r/cowboys"]:before{ background-position:0 -160px!important }
+a[href="/DAL"]:hover:before,a[href$="/r/cowboys"]:hover:before{ background-position:-20px -160px!important }
+a[href="/DEN"]:before,a[href$="/r/denverbroncos"]:before{ background-position:0 -180px!important }
+a[href="/DEN"]:hover:before,a[href$="/r/denverbroncos"]:hover:before{ background-position:-20px -180px!important }
+a[href="/DET"]:before,a[href$="/r/detroitlions"]:before{ background-position:0 -200px!important }
+a[href="/DET"]:hover:before,a[href$="/r/detroitlions"]:hover:before{ background-position:-20px -200px!important }
+a[href="/GB"]:before,a[href$="/r/greenbaypackers"]:before{ background-position:0 -220px!important }
+a[href="/GB"]:hover:before,a[href$="/r/greenbaypackers"]:hover:before{ background-position:-20px -220px!important }
+a[href="/HOU"]:before,a[href$="/r/texans"]:before{ background-position:0 -240px!important }
+a[href="/HOU"]:hover:before,a[href$="/r/texans"]:hover:before{ background-position:-20px -240px!important }
+a[href="/IND"]:before,a[href$="/r/colts"]:before{ background-position:0 -260px!important }
+a[href="/IND"]:hover:before,a[href$="/r/colts"]:hover:before{ background-position:-20px -260px!important }
+a[href="/JAC"]:before,a[href$="/r/jaguars"]:before{ background-position:0 -280px!important }
+a[href="/JAC"]:hover:before,a[href$="/r/jaguars"]:hover:before{ background-position:-20px -280px!important }
+a[href="/KC"]:before,a[href$="/r/kansascitychiefs"]:before{ background-position:0 -300px!important }
+a[href="/KC"]:hover:before,a[href$="/r/kansascitychiefs"]:hover:before{ background-position:-20px -300px!important }
+a[href="/MIA"]:before,a[href$="/r/miamidolphins"]:before{ background-position:0 -320px!important }
+a[href="/MIA"]:hover:before,a[href$="/r/miamidolphins"]:hover:before{ background-position:-20px -320px!important }
+a[href="/MIN"]:before,a[href$="/r/minnesotavikings"]:before{ background-position:0 -340px!important }
+a[href="/MIN"]:hover:before,a[href$="/r/minnesotavikings"]:hover:before{ background-position:-20px -340px!important }
+a[href="/NE"]:before,a[href$="/r/patriots"]:before{ background-position:0 -360px!important }
+a[href="/NE"]:hover:before,a[href$="/r/patriots"]:hover:before{ background-position:-20px -360px!important }
+a[href="/NO"]:before,a[href$="/r/saints"]:before{ background-position:0 -380px!important }
+a[href="/NO"]:hover:before,a[href$="/r/saints"]:hover:before{ background-position:-20px -380px!important }
+a[href="/NYG"]:before,a[href$="/r/nygiants"]:before{ background-position:0 -400px!important }
+a[href="/NYG"]:hover:before,a[href$="/r/nygiants"]:hover:before{ background-position:-20px -400px!important }
+a[href="/NYJ"]:before,a[href$="/r/nyjets"]:before{ background-position:0 -420px!important }
+a[href="/NYJ"]:hover:before,a[href$="/r/nyjets"]:hover:before{ background-position:-20px -420px!important }
+a[href="/OAK"]:before,a[href$="/r/oaklandraiders"]:before{ background-position:0 -440px!important }
+a[href="/OAK"]:hover:before,a[href$="/r/oaklandraiders"]:hover:before{ background-position:-20px -440px!important }
+a[href="/PHI"]:before,a[href$="/r/eagles"]:before{ background-position:0 -460px!important }
+a[href="/PHI"]:hover:before,a[href$="/r/eagles"]:hover:before{ background-position:-20px -460px!important }
+a[href="/PIT"]:before,a[href$="/r/steelers"]:before{ background-position:0 -480px!important }
+a[href="/PIT"]:hover:before,a[href$="/r/steelers"]:hover:before{ background-position:-20px -480px!important }
+a[href="/SD"]:before,a[href$="/r/chargers"]:before{ background-position:0 -500px!important }
+a[href="/SD"]:hover:before,a[href$="/r/chargers"]:hover:before{ background-position:-20px -500px!important }
+a[href="/SF"]:before,a[href$="/r/49ers"]:before{ background-position:0 -520px!important }
+a[href="/SF"]:hover:before,a[href$="/r/49ers"]:hover:before{ background-position:-20px -520px!important }
+a[href="/SEA"]:before,a[href$="/r/seahawks"]:before{ background-position:0 -540px!important }
+a[href="/SEA"]:hover:before,a[href$="/r/seahawks"]:hover:before{ background-position:-20px -540px!important }
+a[href="/LA"]:before,a[href$="/r/losangelesrams"]:before{ background-position:0 -560px!important }
+a[href="/LA"]:hover:before,a[href$="/r/losangelesrams"]:hover:before{ background-position:-20px -560px!important }
+a[href="/TB"]:before,a[href$="/r/buccaneers"]:before{ background-position:0 -580px!important }
+a[href="/TB"]:hover:before,a[href$="/r/buccaneers"]:hover:before{ background-position:-20px -580px!important }
+a[href="/TEN"]:before,a[href$="/r/tennesseetitans"]:before{ background-position:0 -600px!important }
+a[href="/TEN"]:hover:before,a[href$="/r/tennesseetitans"]:hover:before{ background-position:-20px -600px!important }
+a[href="/WAS"]:before,a[href$="/r/redskins"]:before{ background-position:0 -620px!important }
+a[href="/WAS"]:hover:before,a[href$="/r/redskins"]:hover:before{ background-position:-20px -620px!important }
+a[href="/NFL"]:before,a[href$="/r/nfl"]:before{ background-position:0 -640px!important }
+a[href="/NFL"]:hover:before,a[href$="/r/nfl"]:hover:before{ background-position:-20px -640px!important }
+a[href="/NFC"]:before,a[href$="/r/thenfc"]:before{ background-position:0 -660px!important }
+a[href="/NFC"]:hover:before,a[href$="/r/thenfc"]:hover:before{ background-position:-20px -660px!important }
+a[href="/AFC"]:before,a[href$="/r/afc"]:before{ background-position:0 -680px!important }
+a[href="/AFC"]:hover:before,a[href$="/r/afc"]:hover:before{ background-position:-20px -680px!important }

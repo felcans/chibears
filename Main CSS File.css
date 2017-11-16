@@ -84,7 +84,7 @@ body .btn,body button,.c-btn-primary,.wiki-page .wiki-page-content .wiki_button 
 }
 
 #header {
-  margin: 0;
+  margin-top: 23px;
   height: 350px;
   border: none;
   background: url(%%howardwatercolor%%) 50% 50% / cover no-repeat;
@@ -98,6 +98,10 @@ body .btn,body button,.c-btn-primary,.wiki-page .wiki-page-content .wiki_button 
   transition: all .15s ease;
   height: 24px;
   line-height: 23px;
+  position: absolute;
+  top: -23px;
+  left: 0;
+  right: 0;
 }
 
 #sr-header-area .width-clip {
@@ -1711,7 +1715,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   content: "";
   display: block;
   position: absolute;
-  top: 366px;
+  top: 389px;
   width: 320px;
   z-index: 1;
   border-radius: 2px;
@@ -1735,7 +1739,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 .side .titlebox h1.redditname {
   margin-bottom: 6px;
   position: absolute;
-  top: 573px;
+  top: 596px;
   z-index: 100;
   font-family: Lato,Arial,sans-serif;
 }
@@ -1749,7 +1753,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   z-index: 100;
   color: #fff;
   font-size: 12px;
-  top: 600px;
+  top: 623px;
 }
 
 div.titlebox span.number:after {
@@ -1768,10 +1772,6 @@ div.titlebox span.word {
   display: none;
 }
 
-div.titlebox span.number:after {
-  content: " readers";
-}
-
 .titlebox .users-online .number {
   font-style: italic;
 }
@@ -1783,10 +1783,6 @@ div.titlebox span.number:after {
   display: inline-block;
   margin-right: 8px;
   background: url(%%spritesheet%%) -64px -36px;
-}
-
-.titlebox .users-online .number:after {
-  content: " currently online";
 }
 
 .titlebox .word {
@@ -1801,7 +1797,7 @@ div.titlebox span.number:after {
   margin: 0;
   position: absolute;
   margin-left: 208px;
-  top: 578px;
+  top: 601px;
   z-index: 100;
 }
 
@@ -1875,7 +1871,7 @@ div.titlebox span.number:after {
 
 #search {
   position: absolute;
-  top: 650px;
+  top: 673px;
   z-index: 1;
   width: 320px;
 }
@@ -2069,7 +2065,7 @@ div.titlebox span.number:after {
 
 .submit .morelink {
   position: absolute;
-  top: 710px;
+  top: 733px;
   font-size: 0;
   width: 152px;
 }

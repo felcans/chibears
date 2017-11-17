@@ -87,7 +87,7 @@ body .btn,body button,.c-btn-primary,.wiki-page .wiki-page-content .wiki_button 
   margin-top: 23px;
   height: 350px;
   border: none;
-  background: url(%%howardwatercolor%%) 50% 50% / cover no-repeat;
+  background: url(%%howardwatercolor%%) center center / cover;
   z-index: 1;
   box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 }
@@ -198,7 +198,7 @@ a.random.choice {
 
 #header-bottom-right {
   position: absolute;
-  top: 0;
+  top: -24px;
   right: 0;
   width: auto;
   max-width: 340px;
@@ -1731,7 +1731,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   height: 76px;
   margin-top: -16px;
   margin-left: -16px;
-  background: #dd4814;
+  background: #dd4814 url(%%sprites%%) -612px 419px;
   border-radius: 0 0 2px 2px;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
 }
@@ -2134,6 +2134,16 @@ div.titlebox span.word {
   top: -3px;
 }
 
+.side .md a[href$="/r/CHIBears"] {
+  background: url("%%sprites%%") -876px -212px no-repeat;
+  display: block;
+  width: 65px;
+  height: 40px;
+  position: absolute;
+  top: 343px;
+  left: 25px;
+}
+
 .side .md .-blocks,.side .md .-lists,.side .md pre,.side .md blockquote,.side .md table,.side .md p,.side .md ul,.side .md ol {
   color: #292f34;
   font: 13px/1.45 Lato,Arial,sans-serif;
@@ -2141,6 +2151,10 @@ div.titlebox span.word {
 
 .side .md table {
   width:100%;
+}
+
+.side .md .td {
+  text-align: center;
 }
 
 .side .titlebox .md h1 {
@@ -2336,10 +2350,6 @@ div.titlebox span.word {
   width: 100%;
 }
 
-.commentarea > .usertext textarea:not(:focus) {
-  background: url(%%commentboxbg%%) no-repeat 50% 50%;
-}
-
 .usertext .bottom-area {
   width: 504px;
 }
@@ -2381,9 +2391,9 @@ div.titlebox span.word {
 }
 
 .gilded-icon:before {
-  background: url(%%spritesheet%%) -112px -160px;
-  height: 16px;
-  width: 16px;
+  background: url(%%sprites%%) -597px -7px;
+  height: 24px;
+  width: 24px;
 }
 
 .user-gilded > .entry .gilded-icon:before {
@@ -2712,7 +2722,7 @@ body.mod-toolbox .tb-action-button {
 }
 
 .md blockquote {
-  border-left: 2px solid #edf1f3;
+  border: 0;
   color: #738491;
 }
 
@@ -3518,7 +3528,6 @@ ul.image-preview-list li {
 .footer {
   border: 0 solid;
   border-radius: 2px;
-  background: rgba(43,51,58,0.64);
   padding: 16px;
   max-width: 640px;
 }
@@ -3528,7 +3537,7 @@ ul.image-preview-list li {
   border: none;
 }
 
-.flat-vert.title,.bottommenu a {
+.bottommenu a {
   color: rgba(255,255,255,0.7);
 }
 

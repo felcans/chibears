@@ -1,0 +1,24 @@
+** SWAP CHECKLIST **
+
+- spritesheet
+- sprites
+- noresults
+- sidebar h6 with links
+- style sheet
+- footer img
+- sidebar img
+
+
+
+
+*** FLAIR REMOVAL ***
+
+- Zoomed Bear
+- Ditka Player
+- Marty B
+- Alshone Redic Catch
+- Jeffrey Catch
+- Black Unicorn
+- Air Jeffery
+- Fox
+- Blow up

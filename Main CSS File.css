@@ -1,3 +1,51 @@
+/*
+ /r/CHIbears CSS
+
+Colors Used:
+-Navy:      #0B162A
+-Orange:    #dd4814
+
+*/
+
+/*---------------------------------------------------------------------------|
+/                                                                            |
+/                            THINGS THAT CHANGE                              |
+/                                                                            |
+/---------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------
+/                        Header
+/--------------------------------------------------------*/
+
+#header {
+  background: url(%%bearspoly%%) center center / cover;
+  margin-top: 23px;
+  height: 350px;
+  border: none;
+  z-index: 1;
+  box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
+}
+
+/*-------------------------------------------------------
+/                   Sidebar Image
+/------------------------------------------------------*/
+
+.side:before {
+  background-image: url(%%lach%%);
+  height: 192px;
+  background-size: cover;
+  background-position: center center;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 389px;
+  width: 320px;
+  z-index: 1;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+/* Rest of stuff */
 
 *,:before,:after {
   -webkit-box-sizing: border-box;
@@ -69,13 +117,13 @@ body .btn,body button,.c-btn-primary,.wiki-page .wiki-page-content .wiki_button 
 
 .btn:hover,button:hover,.c-btn-primary:hover,.wiki-page .wiki-page-content .wiki_button {
   color: #fff;
-  background: #152542;
+  background: #dd4814;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
 }
 
-.btn:active,button:active,.c-btn-primary:active,.wiki-page .wiki-page-content .wiki_button {
+.wiki-page .wiki-page-content .wiki_button {
   color: #fff;
-  background: #0066b2;
+  background: #dd4814;
   box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 }
 
@@ -83,14 +131,6 @@ body .btn,body button,.c-btn-primary,.wiki-page .wiki-page-content .wiki_button 
   margin-top: 4px;
 }
 
-#header {
-  margin-top: 23px;
-  height: 350px;
-  border: none;
-  background: url(%%howardwatercolor%%) center center / cover;
-  z-index: 1;
-  box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
-}
 
 #sr-header-area {
   background: #051c2c;
@@ -345,22 +385,9 @@ body:not(.loggedin) #header-bottom-right {
   background-position: -48px 0;
 }
 
-#header-img.default-header,#header-img {
-  z-index: 99;
-  width: 0;
-  padding-left: 42px;
-  height: 42px;
-  background: url(%%spritesheet%%) -80px 0;
-  margin: 0 8px 0 0;
-  vertical-align: top;
-  font-size: 0;
-}
-
-#header-img.default-header:hover,#header-img:hover {
-  background-position: -122px 0;
-}
-
-#header .pagename {
+#header .pagename,
+#header-img,
+#header-img.default-header {
   display: none;
 }
 
@@ -374,13 +401,13 @@ body:not(.loggedin) #header-bottom-right {
 
 #header-bottom-left {
   position: absolute;
-  top: 255px;
+  top: 321px;
   left: 16px;
   right: 384px;
 }
 
 #header .tabmenu {
-  margin: 12px 0 0;
+  margin: 12px 0 0 110px;
   display: block;
   height: 42px;
   line-height: 42px;
@@ -393,7 +420,9 @@ body:not(.loggedin) #header-bottom-right {
   position: absolute;
   left: -16px;
   right: -384px;
-  background: rgba(5,28,44,0.9);
+  background: #DD4814;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
   height: 42px;
   z-index: -1;
 }
@@ -405,6 +434,7 @@ body:not(.loggedin) #header-bottom-right {
   font: 400 14px/32px Lato,Arial,sans-serif;
   color: rgba(255,255,255,0.7);
   display: inline-block;
+  font-weight: 600;
 }
 
 #header .tabmenu li a:hover {
@@ -426,7 +456,7 @@ body:not(.loggedin) #header-bottom-right {
 }
 
 body[class] > .content,body.listing-page[class] > .content {
-  margin: 16px 352px 64px 16px;
+  margin: 135px 352px 64px 16px;
   padding: 0;
 }
 
@@ -499,80 +529,34 @@ body > .content .link .rank,.rank-spacer {
 }
 
 .arrow {
-  margin: 0;
-  background-image: url(%%spritesheet%%)!important;
-  width: 32px;
-  border-radius: 2px;
-  transition: background-color .25s ease;
-}
-
-.arrow:hover {
-  background-color: rgba(0,0,0,0.05);
-}
-
-.arrow.up {
   height: 20px;
-  background-position: 0 -80px;
-  transition: background-color .25s ease;
 }
 
 .arrow.upmod {
-  height: 20px;
-  background-position: -32px -80px;
-  position: relative;
+  background-image: url(%%sprites%%);
+  background-position: -838px -38px;
+  padding: 4px 0px 1px 0px;
 }
-
-.arrow.upmod:focus:after {
-  position: absolute;
-  left: 2px;
-  bottom: -3px;
-  width: 28px;
-  height: 28px;
-  opacity: 1;
-  z-index: 100;
-  content: " ";
-  background: #f50;
-  border-radius: 28px;
-  animation: upvote .35s ease-out forwards;
-  -webkit-animation: upvote .35s ease-out forwards;
-}
-
-.arrow.down {
-  height: 20px;
-  background-position: -64px -80px;
-  transition: background-color .25s ease;
-}
-
 .arrow.downmod {
-  height: 20px;
-  background-position: 0 -100px;
+  background-image: url(%%sprites%%);
+  background-position: -872px -10px;
+  padding: 2px;
+  width: 19px;
+}
+.arrow.up {
+  background-image: url(%%sprites%%);
+  background-repeat: no-repeat;
+  background-position: -838px -9px;
+  padding: 4px 0 1px 0;
+}
+.arrow.down {
+  background-image: url(%%sprites%%);
+  background-repeat: no-repeat;
+  background-position: -903px -10px;
+  padding: 2px;
+  width: 19px;
 }
 
-.arrow.down:after {
-  display: block;
-  visibility: hidden;
-  position: absolute;
-  z-index: 1000;
-  margin: -6px 0 0 32px;
-  padding: 12px;
-  background: rgba(79,77,192,0.0);
-  border-radius: 2px;
-  color: rgba(255,255,255,0);
-  content: "For content that does not contribute to any discussion.";
-  text-align: center;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 13px;
-  transition: all .25s ease;
-  pointer-events: none;
-}
-
-.arrow.down:hover:after {
-  visibility: visible;
-  background: rgba(79,77,192,0.9);
-  color: #FFF;
-  margin-left: 48px;
-}
 
 .thumbnail {
   width: 80px;
@@ -665,7 +649,7 @@ body .content .sitetable .link .title a:hover {
   visibility: visible;
   position: relative;
   top: -1px;
-  color: #98abba;
+  color: #888;
   transition: all .15s ease;
 }
 
@@ -809,7 +793,7 @@ body .content .sitetable .link .title a:hover {
 
 .entry .tagline {
   margin-top: 3px;
-  color: #98abba;
+  color: #888;
   font: 12px Lato,Arial,sans-serif;
 }
 
@@ -832,6 +816,10 @@ body .content .sitetable .link .title a:hover {
 
 .link .entry .tagline a.author {
   margin-right: inherit;
+}
+
+.nsfw-stamp acronym, .spoiler-stamp {
+  background: #0B162A !important;
 }
 
 .tagline .userattrs {
@@ -901,7 +889,7 @@ body .content .sitetable .link .title a:hover {
 
 .entry .buttons li a {
   padding: 0 1px;
-  color: #98abba;
+  color: #888;
   font-weight: 400;
   font: 13px Lato,Arial,sans-serif;
   transition: all .15s ease;
@@ -1027,7 +1015,7 @@ body .content .sitetable .link .title a:hover {
 
 .link .entry .buttons li .redditSingleClick {
   padding: 0 1px;
-  color: #98abba;
+  color: #888;
   font: normal 13px Lato,Arial,sans-serif;
   transition: all .15s ease;
 }
@@ -1207,13 +1195,13 @@ b {
 .organic-listing .help {
   margin-bottom: 20px;
   margin-right: 16px;
-  color: #98abba;
+  color: #888;
 }
 
 .organic-listing .sponsored-tagline {
   margin-bottom: 20px;
   margin-right: 16px;
-  color: #98abba;
+  color: #888;
 }
 
 .link.compressed {
@@ -1707,20 +1695,6 @@ div.commentarea div.RES-keyNav-activeElement .md {
   margin: 0 0 16px;
 }
 
-.side:before {
-  height: 192px;
-  background-image: url(%%bboy-bear%%);
-  background-size: cover;
-  background-position: center center;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 389px;
-  width: 320px;
-  z-index: 1;
-  border-radius: 2px;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-}
 
 .side .titlebox h1.redditname:before {
   content: " ";
@@ -1756,7 +1730,11 @@ div.commentarea div.RES-keyNav-activeElement .md {
   top: 623px;
 }
 
-div.titlebox span.number:after {
+.subscribers span.number:after {
+  content: ' Here Now' !important;
+}
+
+.users-online span.number:after {
   content: ' Superfans' !important;
 }
 
@@ -1839,18 +1817,18 @@ div.titlebox span.word {
 }
 
 .titlebox .fancy-toggle-button .active.remove {
-  background: rgba(0,0,0,0.24);
+  background: rgba(0,0,0,0.45);
   color: #fff;
   margin-left: -14px;
   box-shadow: none;
 }
 
 .titlebox .fancy-toggle-button .active.remove:hover {
-  background: rgba(0,0,0,0.32);
+  background: rgba(0,0,0,0.75);
 }
 
 .titlebox .fancy-toggle-button .active.remove:active {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.75);
 }
 
 .hover-bubble.multi-selector {
@@ -1947,10 +1925,6 @@ div.titlebox span.word {
   transition: background .2s cubic-bezier(.4,0,.2,1);
 }
 
-#search input[type=submit]:hover {
-  background: rgba(158,158,158,.2) url(%%spritesheet%%) -64px -96px no-repeat;
-}
-
 #search #searchexpando {
   background: #edf1f3;
   border: none;
@@ -1996,12 +1970,7 @@ div.titlebox span.word {
 }
 
 .morelink:hover {
-  background: #152542;
-}
-
-.morelink:active {
-  background: #152542;
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+  background: #dd4814;
 }
 
 .sidebox.submit.submit-text .morelink {
@@ -2140,8 +2109,9 @@ div.titlebox span.word {
   width: 65px;
   height: 40px;
   position: absolute;
-  top: 343px;
+  top: 373px;
   left: 25px;
+  z-index:1;
 }
 
 .side .md .-blocks,.side .md .-lists,.side .md pre,.side .md blockquote,.side .md table,.side .md p,.side .md ul,.side .md ol {
@@ -2151,10 +2121,21 @@ div.titlebox span.word {
 
 .side .md table {
   width:100%;
+  margin-top: 0;
 }
 
-.side .md .td {
+.side .md table th {
+  background:#d2d2d2;
+}
+
+.side .md td,
+.side .md th {
   text-align: center;
+  font-size: 0.9em;
+}
+
+.side .md tr:nth-child(even) {
+  background:#f4f4f4;
 }
 
 .side .titlebox .md h1 {
@@ -2181,13 +2162,8 @@ div.titlebox span.word {
 }
 
 .side .titlebox .md h3 a:hover {
-  background: #152542;
+  background: #dd4814;
   box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-}
-
-.side .titlebox .md h3 a:active {
-  background: #152542;
-  box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
 }
 
 .side .titlebox .md h4 a {
@@ -2253,6 +2229,8 @@ div.titlebox span.word {
   display: none;
 }
 
+
+
 .gadget .midcol {
   width: 38px;
 }
@@ -2302,7 +2280,7 @@ div.titlebox span.word {
 }
 
 .commentarea .menuarea span.dropdown-title.lightdrop {
-  color: #98abba;
+  color: #888;
 }
 
 .commentarea .menuarea span.dropdown-title.lightdrop:first-letter {
@@ -2314,7 +2292,7 @@ div.titlebox span.word {
 }
 
 .commentarea .menuarea .toggle a,.help-hoverable {
-  color: #98abba;
+  color: #888;
   font-weight: 400;
 }
 
@@ -2440,18 +2418,18 @@ div.titlebox span.word {
 }
 
 .comment .entry .tagline {
-  color: #98abba;
+  color: #888;
   font: 12px Lato,Arial,sans-serif;
 }
 
 .comment .expand {
   background: none;
   transition: all .15s ease;
-  color: #98abba;
+  color: #888;
 }
 
 .comment .expand:hover {
-  color: #98abba;
+  color: #888;
   text-decoration: none;
   background: #edf1f3;
 }
@@ -2502,170 +2480,6 @@ div.titlebox span.word {
   opacity: .2;
 }
 
-.res-nightmode .arrow {
-  background-image: url(%%spritesheet%%)!important;
-}
-
-.res-nightmode .arrow.up {
-  background-position: 0 -80px!important;
-}
-
-.res-nightmode .arrow.upmod {
-  background-position: -32px -80px!important;
-}
-
-.res-nightmode .arrow.down {
-  background-position: -64px -80px!important;
-}
-
-.res-nightmode .arrow.downmod {
-  background-position: 0 -100px!important;
-}
-
-.res-nightmode .thumbnail.default {
-  background: #212121 url(%%spritesheet%%) -152px -48px;
-}
-
-.res-nightmode .thumbnail.self {
-  background: #212121 url(%%spritesheet%%) -96px -48px;
-}
-
-.res-nightmode .stickied .thumbnail {
-  background: #DD4814 url(%%spritesheet%%) -96px -48px;
-}
-
-.res-nightmode body {
-  background-color: #000!important;
-}
-
-.res-nightmode .side,.res-nightmode .tabmenu li a,.res-nightmode .side .usertext-body .md ol,.res-nightmode .side .usertext-body .md ol ol,.res-nightmode .side .usertext-body .md ol ol li,.res-nightmode .side .md ul,.res-nightmode #header-bottom-right,.res-nightmode .flair,.res-nightmode .linkflairlabel,.res-nightmode .side .sidecontentbox .content,.res-nightmode .icon-menu a,.res-nightmode #userbarToggle,.res-nightmode #progressIndicator,.res-nightmode body .content,.res-nightmode .voteWeight {
-  background-color: transparent!important;
-}
-
-.res-nightmode #header .tabmenu:before {
-  background-color: rgba(0,0,0,0.24)!important;
-}
-
-.res-nightmode #sr-header-area {
-  background-color: rgba(0,0,0,0.08)!important;
-}
-
-.res-nightmode body.listing-page > .content,.res-nightmode body.other-discussions-page > .content,.res-nightmode .comments-page .link,.res-nightmode .commentarea > .sitetable > .comment,.res-nightmode #images,.res-nightmode .combined-search-page > .content,.res-nightmode .sponsorshipbox,.res-nightmode .stylesheet-customize-container .pretty-form,.res-nightmode .side .sidecontentbox,.res-nightmode .account-activity-box,.res-nightmode .side .titlebox,.res-nightmode #previoussearch #moresearchinfo,.res-nightmode #ad-frame,.res-nightmode #ad_main,.res-nightmode .wiki-page .wiki-page-content,.res-nightmode .linefield,.res-nightmode .submit-page .roundfield,.res-nightmode .login-form-side,.res-nightmode .comments-page .side .linkinfo,.res-nightmode .reason-popup-innercontent,.res-nightmode .reddit-infobar.with-icon,.res-nightmode .wiki-page .pageactions,.res-nightmode #newlink-with-image-upload #new-link-video-preview,.res-nightmode #newlink-with-image-upload .media-post-upload-progress,.res-nightmode .gold-accent.comment-visits-box {
-  background-color: #121212!important;
-}
-
-.res-nightmode .submit-page button {
-  border: 0 none #000!important;
-}
-
-.res-nightmode .flairselector,.res-nightmode .hover-bubble,.res-nightmode .combined-search-page .searchfacets,.res-nightmode .linkinfo .shortlink input,.res-nightmode .reason-popup-header,.res-nightmode .reason-popup-footer,.res-nightmode #search #searchexpando select,.res-nightmode .md code,.res-nightmode .content .md pre,.res-nightmode .wiki-page .pageactions .wikiaction-current,.res-nightmode .morelink,.res-nightmode #newlink-with-image-upload #new-link-video-preview .video-preview-heading .video-cancel-button,.res-nightmode #newlink-with-image-upload .media-progress-bar-container {
-  background-color: #212121!important;
-}
-
-.res-nightmode .side .md .-blocks,.res-nightmode .side .md .-lists,.res-nightmode .side .md pre,.res-nightmode .side .md blockquote,.res-nightmode .side .md table,.res-nightmode .side .md p,.res-nightmode .side .md ul,.res-nightmode .side .md ol,.res-nightmode .hover-bubble.multi-selector strong,.res-nightmode .content .thing .title:visited,.res-nightmode .content .thing.visited .title,.res-nightmode .titlebox,.res-nightmode .md,.res-nightmode .titlebox:before,.res-nightmode dd,.res-nightmode .mod-toolbox .removal-reason-title,.res-nightmode .reason-popup-header,.res-nightmode .md h1,.res-nightmode .md h3,.res-nightmode #newlink-with-image-upload .media-uploading-label,.res-nightmode .gold-accent.comment-visits-box {
-  color: #E0E0E0!important;
-}
-
-.res-nightmode .flairoptionpane ul li .linkflair:hover,.res-nightmode .flairselector li:hover,.res-nightmode .side .titlebox .md h4 a,.res-nightmode .side .titlebox .tagline a.flairselectbtn,.res-nightmode .leavemoderator a {
-  background-color: #212121!important;
-}
-
-.res-nightmode .link .entry .tagline a,.res-nightmode .hover-bubble,.res-nightmode body .content textarea:focus,.res-nightmode .md strong,.res-nightmode .search-result-body,.res-nightmode .linkflairlabel,.res-nightmode .search-page #search input,.res-nightmode #previoussearch p,.res-nightmode dt,.res-nightmode .search-page #previoussearch label,.res-nightmode #search #searchexpando label,.res-nightmode .pretty-form,.res-nightmode .comments-page .side .linkinfo .score,.res-nightmode .titlebox:before,.res-nightmode .submit-page .roundfield .title,.res-nightmode .RESDropdownList li,.res-nightmode .RESDropdownList li a,.res-nightmode .reason-popup .reason-popup-content {
-  color: #D2D2D2!important;
-}
-
-.res-nightmode .hover-bubble {
-  border: 1px solid #121212!important;
-}
-
-.res-nightmode .submit-page #newlink.submit.content .tabmenu.formtab .selected a,.res-nightmode .submit_text.enabled.roundfield .md,.res-nightmode .sidebox.create .morelink a,.res-nightmode body .content input[type="text"]:hover,.res-nightmode .submit-page #url-field button,.res-nightmode .side *,.res-nightmode .submit-page #url-field button,.res-nightmode .submit-page #newlink.submit.content .btn {
-  color: #fff!important;
-}
-
-.res #userbarToggle {
-  color: rgba(255,255,255,0.45)!important;
-}
-
-.res-nightmode .submit-page #url-field button,.res-nightmode .submit-page #newlink.submit.content .btn,.res-nightmode .sidebox.create .morelink {
-  background-color: #051C2C!important;
-}
-
-.res-nightmode body .content .text,.res-nightmode body .content textarea,.res-nightmode body .content input[type="text"],.res-nightmode body .content input[type="password"],.res-nightmode body .content input[type="url"],.res-nightmode #newlink-with-image-upload .image-upload-drop-target {
-  background-color: #212121!important;
-  border: 1px solid #121212!important;
-  color: #D2D2D2!important;
-}
-
-.res-nightmode .side .spacer input,.res-nightmode .commentarea > .usertext,.res-nightmode .side .titlebox h1.redditname:before {
-  background-color: #212121!important;
-  color: #D2D2D2!important;
-}
-
-.res-nightmode #search input[type="text"] {
-  padding: 0 55px 0 16px;
-  border-radius: 2px;
-  width: 100%;
-  height: 40px;
-  line-height: 30px;
-  background-color: rgba(0,0,0,0.7);
-}
-
-.res-nightmode #search #searchexpando {
-  height: 40px;
-  line-height: 30px;
-  border: 0 1px 1px 1px solid #000;
-}
-
-.res-nightmode #search #searchexpando label {
-  padding: 10px 8px;
-}
-
-.res-nightmode #previoussearch #moresearchinfo,.res-nightmode .search-page #previoussearch label,.res-nightmode #search #searchexpando label,.res-nightmode #search #searchexpando {
-  background-color: #212223!important;
-}
-
-.res .thing .tagline .author {
-  border-radius: 2px!important;
-}
-
-.res-nightmode .titlebox form.toggle,.res-nightmode .leavemoderator {
-  color: gray!important;
-  background: none!important;
-}
-
-.mod-toolbox.res-nightmode .reason-popup {
-  background-color: rgba(0,0,0,.84);
-}
-
-.res-nightmode body.mod-toolbox .tb-general-button,.res-nightmode body.mod-toolbox li a.tb-general-button,.res-nightmode body.mod-toolbox .tb-bracket-button {
-  background-color: transparent;
-  color: gray;
-  font-size: 9px!important;
-  border-width: 1px 1px 1px 2px;
-  border-color: gray;
-  padding: 1px 4px!important;
-  border-radius: 0 2px 2px 0;
-}
-
-.res-nightmode .RESUserTagImage {
-  background-image: url(%%spritesheet%%);
-  background-position: -32px -101px;
-}
-
-.res .thing .tagline .author.submitter {
-  padding: 1px 4px;
-  border-radius: 1px;
-  background-color: #4F8EF7!important;
-  color: #FFF;
-  box-shadow: 0 0 0 rgba(0,0,0,0);
-  transition: all .15s ease;
-}
-
-.res .thing .tagline .author.submitter:hover {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  background-color: #4F8EF7!important;
-}
-
 .comment .score {
   font-size: inherit;
   font-weight: 700;
@@ -2679,10 +2493,6 @@ div.titlebox span.word {
   line-height: 14px;
 }
 
-.res-nightmode .reason-popup .selectable-reason.reason-selected .styled-reason {
-  background-color: rgba(0,0,0,.25);
-}
-
 #search #searchexpando label,.res #search #searchexpando label {
   padding-top: 0;
   padding-bottom: 0;
@@ -2694,10 +2504,6 @@ div.titlebox span.word {
 
 .res #searchexpando br {
   display: none;
-}
-
-.res-nightmode .content .md pre,.res-nightmode .md code {
-  border-color: #121212!important;
 }
 
 body.mod-toolbox .tb-action-button {
@@ -2737,6 +2543,42 @@ body.mod-toolbox .tb-action-button {
   margin: 16px 0 0;
 }
 
+.md h6 {
+  background: #0B162A;
+  margin-bottom: 0 !important;
+  padding: 10px 10px 10px 55px;
+  text-decoration: none;
+  position: relative;
+}
+
+.md h6:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: rgba(255,255,255,0.1);
+}
+
+.md h6:after {
+  content: '';
+  display: block;
+  width: 55px;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  bottom: 0;
+  background: url(%%sprites%%) 14px 429px;
+}
+
+.md h6 a {
+  position:relative;
+  pointer-events: none;
+  color:#fff;
+}
+
 .usertext.grayed .usertext-body {
   margin: 4px 0;
   background-color: transparent;
@@ -2750,7 +2592,7 @@ body.mod-toolbox .tb-action-button {
 }
 
 .comment .flat-list li a {
-  color: #98abba;
+  color: #888;
   font-weight: 400;
   font-size: 10px;
 }
@@ -2791,7 +2633,7 @@ body.mod-toolbox .tb-action-button {
 }
 
 .comments-page .side .linkinfo .date,.other-discussions-page .side .linkinfo .date {
-  color: #98abba;
+  color: #888;
 }
 
 .comments-page .side .linkinfo .date:first-letter,.other-discussions-page .side .linkinfo .date:first-letter {
@@ -3172,7 +3014,7 @@ body #newlink-with-image-upload .file-upload-button {
 
 .combined-search-page .search-result-subreddit .search-subscribe-button .remove,.combined-search-page .search-result-subreddit .search-subscribe-button .remove:active {
   background: transparent;
-  border: 1px solid #98abba;
+  border: 1px solid #888;
   color: #738491;
 }
 
@@ -3198,39 +3040,6 @@ body #newlink-with-image-upload .file-upload-button {
   color: #738491;
 }
 
-[class] .searchfacets {
-  border: none;
-  margin: 0 0 8px;
-  width: 100%;
-  max-width: initial;
-}
-
-.searchfacets .title {
-  margin: 0;
-}
-
-.searchfacets h4.title {
-  color: #738491;
-  margin: 0 0 8px;
-}
-
-.searchfacets h4.title:first-letter {
-  text-transform: capitalize;
-}
-
-.searchfacets .list {
-  margin: 0;
-}
-
-.searchfacets .facet.count {
-  color: #98abba;
-  font-weight: 400;
-}
-
-.searchfacets .facet.count:hover {
-  text-decoration: none;
-}
-
 .search-page .morelink {
   top: 384px;
 }
@@ -3243,97 +3052,8 @@ body #newlink-with-image-upload .file-upload-button {
   display: none;
 }
 
-.wiki-page .wikititle {
-  background: #fff;
-  padding: 9px 16px 10px;
-  border-radius: 2px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.16);
-  font: 16px Lato,Arial,sans-serif;
-  margin: 0;
-}
-
-.wiki-page .pageactions {
-  background: #fff;
-  margin-left: 16px;
-  border-radius: 2px;
-  padding: 0 16px;
-  border: none;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.16);
-}
-
-.wiki-page .pageactions .wikiaction {
-  margin: 0;
-  background: transparent;
-  border-radius: 0;
-  padding: 10px 16px 11px;
-  color: #98abba;
-}
-
-.wiki-page .pageactions .wikiaction-current {
-  padding: 10px 16px 9px;
-  border-bottom: 2px solid #051C2C;
-  color: #051C2C;
-}
-
-.wiki-page .pageactions .wikiaction:hover,.wiki-page .pageactions .wikiaction-current:hover {
-  background: rgba(0,0,0,0.05);
-}
-
-.wiki-page .wiki-page-content {
-  margin: 16px 0;
-  background: #fff;
-  padding: 8px 0;
-}
-
-.wiki-page .wiki-page-content .wiki > .toc > ul {
-  border: none;
-}
-
-.wiki-page .wiki-page-content .wiki.md {
-  color: #292f34;
-}
-
-.wiki-page .wiki-page-content .wiki.md h2 {
-  color: #292f34;
-}
-
-.wiki-page .wiki-page-content hr {
-  border-style: solid;
-  border-color: #edf1f3;
-}
-
-.wiki-page .wiki-page-content em {
-  color: #98abba;
-}
-
-.wiki-page .wiki-page-content .wikirevisionlisting table tr:hover {
-  background-color: rgba(0,0,0,.10)!important;
-}
-
-.linefield,.linefield.mobile {
-  background: #fff;
-  color: #98abba;
-  margin: 0 0 16px;
-  width: 528px;
-  border: none;
-}
-
-.linefield .title {
-  color: #051C2C;
-  text-transform: capitalize;
-  padding: 0;
-}
-
-.linefield .linefield-content {
-  padding: 0;
-}
-
-.linefield .title:first-letter,.linefield label:first-letter {
-  text-transform: capitalize;
-}
-
 .usertext .bottom-area a {
-  color: #98abba;
+  color: #888;
 }
 
 .usertext .bottom-area a:hover {
@@ -3378,7 +3098,7 @@ body #newlink-with-image-upload .file-upload-button {
 }
 
 .tabpane-content .flairrow a.author {
-  color: #98abba;
+  color: #888;
 }
 
 .tabpane-content .tagline a {
@@ -3441,43 +3161,12 @@ ul.image-preview-list li {
   width: 33.33%;
 }
 
-.subreddit-rules-page .subreddit-rule-buttons button,.subreddit-rules-page .subreddit-rule-add-form-buttons button,.subreddit-rules-page .form-buttons button,.subreddit-rule-delete-confirmation button {
-  padding: 0 16px;
-  background: #051C2C;
-  border: none;
-  border-radius: 2px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
-  height: 36px;
-  font-size: 14px;
-  font-family: Lato,Arial,sans-serif;
-  box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
-  transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
-}
-
-.subreddit-rules-page .subreddit-rule-buttons button:hover,.subreddit-rules-page .subreddit-rule-add-form-buttons button:hover,.subreddit-rules-page .form-buttons button:hover,.subreddit-rule-delete-confirmation button:hover {
-  color: #fff;
-  background: #152542;
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-}
-
-.subreddit-rules-page .subreddit-rule-buttons button:active,.subreddit-rules-page .subreddit-rule-add-form-buttons button:active,.subreddit-rules-page .form-buttons button:active,.subreddit-rule-delete-confirmation button:active {
-  color: #fff;
-  background: #0066b2;
-  box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
-}
-
-.subreddit-rule-item:hover {
-  background-color: transparent;
-}
-
 .flair {
   border: none;
   border-radius: 0;
   font: normal 12px Lato,Arial,sans-serif;
   background: transparent;
-  color: #98abba;
+  color: #888;
   padding-left: 0;
   margin-right: inherit;
 }
@@ -3587,37 +3276,6 @@ ul.image-preview-list li {
   color: #E0E0E0;
 }
 
-.pinHeader-sub #sr-header-area,.pinHeader-subanduser #sr-header-area {
-  background-image: url(%%headerimg%%);
-  background-position: 50% 0;
-}
-
-.pinHeader-sub #header-bottom-left,.pinHeader-subanduser #header-bottom-left {
-  margin-top: 0;
-}
-
-.pinHeader-header:before {
-  display: none!important;
-}
-
-.pinHeader-header .content {
-  margin-top: 12px!important;
-}
-
-.pinHeader-header .side {
-  margin-top: 164px;
-}
-
-.pinHeader-header.res.comments-page .side {
-  margin-top: 290px;
-}
-
-.pinHeader-header #header {
-  top: 0;
-  background-image: url(%%headerimg%%);
-  height: 84px;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.24);
-}
 
 .res.search-page #header .tabmenu {
   display: none!important;
@@ -3638,10 +3296,6 @@ ul.image-preview-list li {
   left: -32px;
 }
 
-.res a.beta-link {
-  left: -10px;
-  top: 4px;
-}
 
 .res #header-bottom-right .user .userkarma {
   display: none;
@@ -3661,100 +3315,6 @@ ul.image-preview-list li {
   border-bottom: 2px solid #fff;
 }
 
-#RESAccountSwitcherIcon {
-  position: relative;
-  top: -4px;
-}
-
-.res #REScommentNavToggle {
-  max-width: 98px;
-  overflow: hidden;
-  max-height: 15px;
-  background-color: #FAFAFA;
-  transition: all .35s ease;
-}
-
-.res #REScommentNavToggle:hover {
-  max-width: 100%;
-}
-
-.res .commentarea > .usertext {
-  margin-top: -76px;
-  padding-top: 80px!important;
-}
-
-.res .content .RESBigEditorPop {
-  background-color: rgba(0,0,0,0);
-  line-height: inherit;
-  font: 11px Lato,Arial,sans-serif;
-  box-shadow: none;
-  font-weight: 400;
-  color: #4D5763;
-  border: none;
-  padding: 0;
-  height: inherit;
-  margin-left: 4px;
-  margin-top: 5px;
-}
-
-html.res-commentBoxes .comment {
-  margin-left: 0!important;
-  margin-right: 0!important;
-}
-
-.res .commentarea .thing {
-  border: none!important;
-  border-radius: 2px!important;
-}
-
-.res .titlebox .tagline {
-  margin-top: 6px;
-}
-
-.res .RESshortcutside,.res .RESDashboardToggle {
-  background-image: none!important;
-  border: none;
-  color: #4D5763;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 0;
-  padding: 4px 6px 4px 0;
-  margin: 2px 6px 2px -4px;
-  text-align: left;
-  width: auto;
-}
-
-.res .RESshortcutside:hover,.res .RESDashboardToggle:hover {
-  background-color: transparent;
-  color: #051C2C;
-}
-
-.res #progressIndicator {
-  width: inherit;
-  border-radius: 0;
-  border: none;
-  padding: 16px;
-  margin: 16px 0;
-  color: #b3b3b3;
-  background-color: #fff;
-  height: inherit;
-}
-
-.res #progressIndicator h2 {
-  color: #4D5763;
-}
-
-.res .NERPageMarker {
-  border-radius: 0;
-  border: none;
-  background-color: #fff;
-  padding: 16px 0;
-  margin: 0;
-}
-
-.res .sitetable .sitetable {
-  margin-right: 0;
-}
 
 .res #search #searchexpando {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -3892,6 +3452,49 @@ body.listing-page > .content,body.other-discussions-page > .content,.comments-pa
   Add your customizations and addons below!
 -------------------------------------------------------------------------- */
 
+.md ul:first-of-type {
+  position:absolute;
+  top: 429px;
+  left: 0;
+  white-space: nowrap;
+  background: #fff;
+  padding: 0;
+  margin: 0 0 0 16px;
+  width: auto;
+  right: 0;
+  margin-right: 352px;
+  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+  border-radius: 2px;
+}
+
+.md ul:first-of-type li {
+  display: inline-block;
+  padding: 1em;
+  width: 14%;
+  text-align: center;
+  border-right: 1px solid #d2d2d2;
+  /*background: url("%%sprites%%") 14px 429px;*/
+}
+
+.md ul:first-of-type li:last-of-type {
+  border: 0;
+}
+
+.md ul:first-of-type li a:first-of-type {
+  display: block;
+}
+.md ul:first-of-type li a[href="/pick"] {
+  color: #888;
+}
+.md ul:first-of-type li a[href="/round"] {
+  color: #051C2C;
+  font-weight: 600;
+}
+
+.md ul:first-of-type li:nth-child(1) {
+
+}
+
 /*-------------------------------------------------------
 /                       Team Logos
 /-------------------------------------------------------*/
@@ -3901,7 +3504,6 @@ a[href="/ARI"]:before,a[href$="/r/azcardinals"]:before,a[href="/ATL"]:before,a[h
     display:inline-block;
     background-repeat:no-repeat;
     background-image:url(%%nfl-teams%%);
-    background-position:-9999px -9999px;
     vertical-align:middle;
     margin-right:3px;
     content:""
@@ -3976,3 +3578,140 @@ a[href="/NFC"]:before,a[href$="/r/thenfc"]:before{ background-position:0 -660px!
 a[href="/NFC"]:hover:before,a[href$="/r/thenfc"]:hover:before{ background-position:-20px -660px!important }
 a[href="/AFC"]:before,a[href$="/r/afc"]:before{ background-position:0 -680px!important }
 a[href="/AFC"]:hover:before,a[href$="/r/afc"]:hover:before{ background-position:-20px -680px!important }
+
+/*------More FLAIR-----*/
+
+.flair-staley:before, .flair-meatball:before, .flair-koolaid:before, .flair-deepdish:before, .flair-cheesegrater:before, .flair-hotdog:before, .flair-pace:before, .flair-oldlogo:before, .flair-walterpose:before, .flair-homer:before, .flair-smokinjays:before, .flair-flag:before, .flair-helmet:before, .flair-sweater:before, .flair-sweater2:before, .flair-ditkasnoo:before, .flair-gould:before, .flair-halassnoo:before, .flair-martyb:before, .flair-peanut:before, .flair-circlelogo:before, .flair-GSH:before, .flair-B:before, .flair-SBring:before, .flair-long:before, .flair-bearlogo:before, .flair-sunglasses:before, .flair-ditka:before, .flair-hester:before, .flair-halas:before, .flair-lach:before, .flair-WPsmile:before, .flair-SBXX:before, .flair-ball:before, .flair-C2:before, .flair-sidehelmet:before, .flair-C3:before, .flair-logozoom:before, .flair-sayers:before, .flair-monsters:before, .flair-actualpeanut:before, .flair-tillman:before, .flair-grange:before, .flair-actualbear:before, .flair-singletary:before, .flair-superfans:before, .flair-fridge:before, .flair-pixelpayton:before, .flair-hurricaneditka:before, .flair-jayshair:before, .flair-kylelong:before, .flair-mcmahon:before, .flair-luckman:before, .flair-sox:before, .flair-cubs:before, .flair-bulls:before, .flair-hawks:before, .flair-butkus:before, .flair-italianbeef:before, .flair-trubisky:before, .flair-howard:before, .flair-cohen:before, .flair-floyd:before {
+    position:absolute;
+    top:-5px;left:-36px;
+    float:left;
+    display:inline-block;
+    height:32px;
+    background: url(%%sprites%%);
+}
+
+.flair-staley:before {background-position: -376px -46px; width: 33px;}
+.flair-meatball:before {background-position: -419px -47px; width: 37px;}
+.flair-koolaid:before {background-position: -464px -45px; width: 44px;}
+.flair-deepdish:before {background-position: -512px -47px; width: 50px;}
+.flair-cheesegrater:before {background-position: -568px -46px; width: 40px;}
+.flair-hotdog:before {background-position: -3px -93px; width: 55px;}
+.flair-pace:before {background-position: -69px -93px; width: 45px;}
+.flair-oldlogo:before {background-position: -129px -93px; width: 21px;}
+.flair-walterpose:before {background-position: -161px -92px; width: 28px;}
+.flair-homer:before {background-position: -202px -93px; width: 20px;}
+.flair-smokinjays:before {background-position: -570px -92px; width: 49px;}
+.flair-flag:before {background-position: -598px -183px; width: 52px;}
+.flair-helmet:before {background-position: -86px -139px; width: 39px;}
+.flair-sweater:before {background-position: -133px -139px; width: 22px;}
+.flair-sweater2:before {background-position: -169px -139px; width: 31px;}
+.flair-ditkasnoo:before {background-position: -295px -140px; width: 28px;}
+.flair-gould:before {background-position: -333px -139px; width: 42px;}
+.flair-halassnoo:before {background-position: -388px -138px; width: 23px;}
+.flair-martyb:before {background-position: -424px -139px; width: 34px;}
+.flair-peanut:before {background-position: -470px -138px; width: 14px;}
+.flair-circlelogo:before {background-position: -497px -139px; width: 33px;}
+.flair-GSH:before {background-position: -542px -140px; width: 55px;}
+.flair-B:before {background-position: -231px -93px; width: 31px;}
+.flair-SBring:before {background-position: -271px -93px; width: 33px;}
+.flair-long:before {background-position: -316px -92px; width: 28px;}
+.flair-bearlogo:before {background-position: -397px -92px; width: 32px;}
+.flair-sunglasses:before {background-position: -438px -93px; width: 40px;}
+.flair-ditka:before {background-position: -529px -92px; width: 24px;}
+.flair-hester:before {background-position: 0 -42px; width: 31px;}
+.flair-halas:before {background-position: -40px -230px; width: 40px;}
+.flair-lach:before {background-position: -123px -230px; width: 40px;}
+.flair-WPsmile:before {background-position: -41px -47px; width: 29px;}
+.flair-SBXX:before {background-position: -79px -46px; width: 53px; }
+.flair-ball:before {background-position: -180px -46px; width: 36px;}
+.flair-C2:before {background-position: -224px -46px; width: 35px; }
+.flair-sidehelmet:before {background-position: -272px -46px; width: 30px;}
+.flair-C3:before {background-position: -309px -46px; width: 30px;}
+.flair-logozoom:before {background-position: -350px -46px; width: 20px; }
+.flair-sayers:before {background-position: -618px -44px; width: 51px;}
+.flair-monsters:before {background-position: -140px -186px; width: 38px;}
+.flair-actualpeanut:before {background-position: -193px -186px; width: 66px;}
+.flair-tillman:before {background-position: -267px -184px; width: 59px;}
+.flair-grange:before {background-position: -334px -185px; width: 35px;}
+.flair-actualbear:before {background-position: -381px -184px; width: 42px;}
+.flair-singletary:before {background-position: -439px -186px; width: 35px;}
+.flair-superfans:before {background-position: -488px -180px; width: 101px;margin-right:20px;}
+.flair-fridge:before {background-position: 0 -230px; width: 25px;}
+.flair-pixelpayton:before {background-position: -176px -232px; width: 30px;}
+.flair-hurricaneditka:before {background-position: -216px -232px; width: 31px;}
+.flair-kylelong:before {background-position: -302px -229px; width: 42px;}
+.flair-mcmahon:before {background-position: -351px -232px; width: 48px;}
+.flair-luckman:before {background-position: -410px -231px; width: 42px;}
+.flair-sox:before {background-position: -463px -231px; width: 22px;}
+.flair-cubs:before {background-position: -499px -232px; width: 33px;}
+.flair-bulls:before {background-position: -543px -229px; width: 36px;}
+.flair-hawks:before {background-position: -588px -232px; width: 39px;}
+.flair-butkus:before {background-position: -635px -93px; width: 25px;}
+.flair-italianbeef:before {background-position: -316px -269px; width: 65px;}
+.flair-trubisky:before {background-position: -432px -272px; width: 40px;}
+.flair-howard:before {background-position: -478px -272px; width: 33px;}
+.flair-cohen:before {background-position: -513px -272px; width: 40px;}
+.flair-floyd:before {background-position: -555px -272px; width: 40px;}
+.content .flair-meatball {width: 1px;}
+.content .flair-koolaid {width: 8px;}
+.content .flair-deepdish {width: 14px;}
+.content .flair-cheesegrater {width: 4px;}
+.content .flair-hotdog {width: 19px;}
+.content .flair-pace {width: 9px;}
+.content .flair-flag {width: 16px;}
+.content .flair-helmet {width: 3px;}
+.content .flair-gould {width: 6px;}
+.content .flair-GSH {width: 19px;}
+.content .flair-sunglasses {width: 4px;}
+.content .flair-jay {width: 9px;}
+.content .flair-halas {width: 4px;}
+.content .flair-coachfox {width: 34px;}
+.content .flair-lach {width: 4px;}
+.content .flair-SBXX {width: 17px; }
+.content .flair-sayers {width: 15px;}
+.content .flair-monsters {width: 2px;}
+.content .flair-actualpeanut {width: 30px;}
+.content .flair-tillman {width: 23px;}
+.content .flair-grange {width: 35px;}
+.content .flair-actualbear {width: 6px;}
+.content .flair-singletary {width: 35px;}
+.content .flair-superfans {width: 65px;}
+.content .flair-kylelong {width: 6px;}
+.content .flair-mcmahon {width: 12px;}
+.content .flair-luckman {width: 6px;}
+.content .flair-italianbeef {width: 29px;}
+
+/* snow 
+#header:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("%%snow1%%"), url("%%snow2%%"), url("%%snow3%%");
+  animation: snows 20s linear infinite;
+  -webkit-animation: snows 20s linear infinite;
+  z-index: 9;
+}
+
+@keyframes snows {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px
+  }
+  100% {
+    background-position: 500px 1000px, 300px 300px, 400px 400px
+  }
+}
+
+
+@-webkit-keyframes snows {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px
+  }
+  100% {
+    background-position: 500px 1000px, 300px 300px, 400px 400px
+  }
+}
+*/

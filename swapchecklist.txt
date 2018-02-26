@@ -9,16 +9,35 @@
 - sidebar img
 
 
-
-
 *** FLAIR REMOVAL ***
+// Remove from CSS
 
 - Zoomed Bear
-- Ditka Player
-- Marty B
-- Alshone Redic Catch
-- Jeffrey Catch
-- Black Unicorn
-- Air Jeffery
-- Fox
-- Blow up
+- Ditka Player *--
+- Marty B *--
+- Alshone Redic Catch *--
+- Jeffrey Catch *--
+- Black Unicorn *--
+- Air Jeffery *--
+- Blow up *--
+- madman mcphee *--
+- firefox *--
+- coach fox *--
+- jay *--
+- forte *--
+- gould *
+- smokinjay *--
+
+
+** FIX LIST **
+
+- gould gold
+- expanded search
+- submit link/text/msg mods
+- mod notification C logo
+- nfl teams in grid
+- social media clean up 
+- other chicago teams logo
+- move tiny icons to enlarge pics from sprite sheet
+- move sprite sheet over to spirtes
+- post icons (announcements, quality posts, spoilers)

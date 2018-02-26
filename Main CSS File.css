@@ -537,12 +537,20 @@ body > .content .link .rank,.rank-spacer {
   background-position: -838px -38px;
   padding: 4px 0px 1px 0px;
 }
+
+.arrow.down {
+  height: 20px;
+  background-position: -64px -80px;
+  transition: background-color .25s ease;
+}
+
 .arrow.downmod {
   background-image: url(%%sprites%%);
   background-position: -872px -10px;
   padding: 2px;
   width: 19px;
 }
+
 .arrow.up {
   background-image: url(%%sprites%%);
   background-repeat: no-repeat;
@@ -2122,12 +2130,21 @@ div.titlebox span.word {
 .side .md table {
   width:100%;
   margin-top: 0;
+<<<<<<< HEAD
 }
 
 .side .md table th {
   background:#d2d2d2;
 }
 
+=======
+}
+
+.side .md table th {
+  background:#d2d2d2;
+}
+
+>>>>>>> 0eb0d026667dc8440e2979d8c0f4d3d215e38dbb
 .side .md td,
 .side .md th {
   text-align: center;
@@ -3484,17 +3501,24 @@ body.listing-page > .content,body.other-discussions-page > .content,.comments-pa
   display: block;
 }
 .md ul:first-of-type li a[href="/pick"] {
+<<<<<<< HEAD
   color: #888;
+=======
+  color: #98abba;
+>>>>>>> 0eb0d026667dc8440e2979d8c0f4d3d215e38dbb
 }
 .md ul:first-of-type li a[href="/round"] {
   color: #051C2C;
   font-weight: 600;
 }
 
+<<<<<<< HEAD
 .md ul:first-of-type li:nth-child(1) {
 
 }
 
+=======
+>>>>>>> 0eb0d026667dc8440e2979d8c0f4d3d215e38dbb
 /*-------------------------------------------------------
 /                       Team Logos
 /-------------------------------------------------------*/

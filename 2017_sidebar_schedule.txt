@@ -5,61 +5,83 @@
 
 ### Welcome to Reddit's home for the Chicago Bears
 ###[Subreddit Rules](https://www.reddit.com/r/chibears/wiki/rules)
-###[FAQ](https://www.reddit.com/r/chibears/wiki/faq) 
+###[FAQ](https://www.reddit.com/r/chibears/wiki/faq)
+###[Discord](https://discord.gg/A6RUrXp)
 
 [ ](http://www.reddit.com)
 
 
-/* Panels */
-* [2/13](/date) | Clubs may sign CFL Free Agents
-* [2/20](/date) | Clubs may designate Franchise Tag
-* [2/27-3/5](/date) | Combine
-* [3/6 4 pm](/date) | Deadline for Franchise Tag
-* [3/14 4 pm](/date) | Deadline for RFA offers, option clauses, and 2017 contracts expire
-* [3/14 4 pm](/date) | Free Agency starts
-* [4/2](/date) | Clubs with new head coaches may start offseason work outs
-* [4/14-23](/date) | NFL Schedule released
-* [4/20](/date) | Deadline for RFAs to sign offer sheets
-* [4/26-28](/date) | Draft
-* [5/4-7](/date) | Clubs may hold their one 3 day rookie minicamps
-* [5/11-14](/date) | Clubs may hold their one 3 day rookie minicamps
-* [7/16](/date) | Deadline for tagged players to reach a deal
-* [8/2](/date) | Hall of Fame Game
-* [8/7](/date) | Deadline for contract players to report
-* [9/1](/date) | Clubs must reach 53 Man Roster
+&nbsp;
 
+######[Upcoming Dates](#top)
+| Date | Event |
+|-----|-----|
+| 2/13 | Clubs may sign CFL Free Agents |
+| 2/20 | Clubs may designate Franchise Tag |
+| 2/27-3/5 | Combine |
+| 3/6 4 pm | Deadline for Franchise Tag |
+| 3/14 4 pm | Deadline for RFA offers, option clauses, and 2017 contracts expire |
+| 3/14 4 pm | Free Agency starts |
+| 4/2 | Clubs with new head coaches may start offseason work outs |
+| 4/14-23 | NFL Schedule released |
+| 4/20 | Deadline for RFAs to sign offer sheets |
+| 4/26-28 | Draft |
+| 5/4-7 | Clubs may hold their one 3 day rookie minicamps |
+| 5/11-14 | Clubs may hold their one 3 day rookie minicamps |
+| 7/16 | Deadline for tagged players to reach a deal |
+| 8/2 | Hall of Fame Game |
+| 8/7 | Deadline for contract players to report |
+| 9/1 | Clubs must reach 53 Man Roster |
 
 &nbsp;
 
-######[NFCN Standings](#top)
-| Team | Record | Div | Streak |
-|-----|-----|-----|-----|
-| [](/r/minnesotavikings) | 7 - 2 | 2 - 1 | W5|
-| [](/r/detroitlions) | 5 - 4|  2 - 0 | W1 |
-| [](/r/chibears) | 3 - 6| 0 - 3 | L2 |
-| [](/r/greenbaypackers) | 5 - 4 |  2 - 2 | W1 |
+######[Draft Picks](#top)
+| Round | Pick |
+| ---- | ---- |
+| 1 | 8 |
+| 2 | 39 |
+| 4 | 105 |
+| 4 | 115 |
+| 5 | 145 |
+| 6 | 181 |
+| 7 | 224 |
 
+&nbsp;
+
+######[Preseason](#top)   
+| Date | Team | Time |
+|-----|-----|-----|
+| Thu. Aug 2 | [Ravens](/r/ravens) | 7:00 PM |
+| Aug 9 | [Bengals](/r/bengals) | 6:00 PM |
+| Aug 18 | [Broncos](/r/denverbroncos) | 8:05 PM |
+| Aug 25 | [Chiefs](/r/kansascitychiefs) | 12:00 PM |
+| Thu. Aug 30 | [Bills](/r/buffalobills) | 7:00 PM |
+
+&nbsp;
 
 ######[Season Schedule](#top)   
 | # | Date | Team | Time | Channel |
 |-----|-----|-----|-----|-----|
-| 1 | Sun Sept. **10th** | vs [](/r/falcons)  | **L** | 17-23 |
-| 2 | Sun Sept. **17th** | @ [](/r/buccaneers) | **L** | 7-29 |
-| 3 | Sun Sept. **24th** | vs [](/r/steelers) | **W** | 23-17 |
-| 4 | Thurs Sept. **28th** | @ [](/r/greenbaypackers) | **L** | 14-35 |
-| 5 | Mon Oct. **9th** | vs [](/r/minnesotavikings) | **L** | 17-20|
-| 6 | Sun Oct. **15th** | @ [](/r/ravens) | **W** | 27-24 |
-| 7 | Sun Oct. **22nd*** | vs [](/r/panthers) | **W** | 17-3 |
-| 8 | Sun Oct. ***29th*** | @ [](/r/saints) | **L** | 12-20 |
-| **9** | **Sun Nov. 5th** | **BYE** | **BYE** | **BYE** |
-| 10 | Sun Nov. **12th** | vs [](/r/greenbaypackers) | **L**| 23 - 16 |
-| 11 | Sun Nov. **19th** | vs [](/r/detroitlions) | 12 P.M. | FOX |
-| 12 | Sun Nov. **26th** | @ [](/r/eagles) | 12 P.M. | FOX |
-| 13 | Sun Dec. **3rd** | vs [](/r/49ers) | 12 P.M. | CBS |
-| 14 | Sun Dec. **10th** | @ [](/r/bengals) | 12 P.M. | FOX |
-| 15 | Sat Dec. **16th** | @ [](/r/detroitlions) | **3:30 P.M.** | NFLN |
-| 16 | Sun Dec. **24th** | vs [](/r/browns) | 12 P.M. | CBS |
-| 17 | Sun Dec. **31st** | @ [](/r/minnesotavikings) | 12 P.M. | FOX |
+| 1 | Sep 9 | @ [Packers](/r/greenbaypackers) | 7:20PM | NBC |
+| 2 | Sep 17 | [Seahawks](/r/seahawks) | 7:15PM | ESPN |
+| 3 | Sep 23 | @ [Cardinals](/r/arizonacardinals) | 3:25PM | FOX |
+| 4 | Sep 30 | [Buccaneers](/r/buccaneers) | 12:00PM | FOX |
+| 5 | ---- | BYE | ---- | ---- |
+| 6 | Oct 14 | @ [Dolphins](/r/miamidolphins) | 12:00PM | FOX |
+| 7 | Oct 21 | [Patriots](/r/patriots) | 12:00PM | CBS |
+| 8 | Oct 28 | [Jets](/r/nyjets) | 12:00PM | CBS |
+| 9 | Nov 4 | @ [Bills](/r/buffalobills) | 12:00PM | FOX |
+| 10 | Nov 11 | [Lions](/r/detroitlions) | 12:00PM | FOX |
+| 11 | Nov 18 | [Vikings](/r/minnesotavikings) | 12:00PM | FOX |
+| 12 | Nov 22 | @ [Lions](/r/detroitlions) | 11:30AM | CBS |
+| 13 | Dec 2 | @ [Giants](/r/nygiants) | 12:00PM | FOX |
+| 14 | Dec 9 | [Rams](/r/losangelesrams) | 12:00PM | FOX |
+| 15 | Dec 16 | [Packers](/r/greenbaypackers) | 12:00PM | FOX |
+| 16 | Dec 23 | @ [49ers](/r/49ers) | 3:05PM | FOX |
+| 17 | Dec 30 | @ [Vikings](/r/minnesotavikings) | 12:00PM | FOX |
+
+
+&nbsp;
 
 ######[Official Accounts](#top)
 * [Facebook](https://www.facebook.com/ChicagoBears)
@@ -67,6 +89,8 @@
 * [Instagram](https://instagram.com/chicagobears/)
 * [YouTube](https://www.youtube.com/channel/UCP0Cdc6moLMyDJiO0s-yhbQ)
 * [Official Website](http://www.chicagobears.com/)
+
+&nbsp;
 
 ######[Related Subreddits](#top)
 * [/r/NFL](//nfl.reddit.com)
@@ -77,18 +101,15 @@
 * [/r/whitesox](//whitesox.reddit.com)
 * [/r/chicagofire](//chicagofire.reddit.com)
 
-######[Misc.](#top)
-
+&nbsp;
 
 ######[Around The NFL](#top)
 ##[](/r/nfl )
-* [](/r/thenfc)
-* [](/r/afc) 
-* [](/r/chibears)[](/r/minnesotavikings)[](/r/detroitlions)[](/r/greenbaypackers)
-* [](/r/panthers)[](/r/saints)[](/r/falcons)[](/r/buccaneers)
-* [](/r/eagles)[](/r/cowboys)[](/r/nygiants)[](/r/redskins)
-* [](/r/seahawks)[](/r/49ers)[](/r/azcardinals)[](/r/losangelesrams)
-* [](/r/ravens)[](/r/steelers)[](/r/bengals)[](/r/browns)
-* [](/r/tennesseetitans)[](/r/colts)[](/r/jaguars)[](/r/texans)
-* [](/r/buffalobills)[](/r/miamidolphins)[](/r/patriots)[](/r/nyjets)
-* [](/r/kansascitychiefs)[](/r/chargers)[](/r/oaklandraiders)[](/r/denverbroncos)
+> * [](/r/chibears)[](/r/minnesotavikings)[](/r/detroitlions)[](/r/greenbaypackers)
+> * [](/r/panthers)[](/r/saints)[](/r/falcons)[](/r/buccaneers)
+> * [](/r/eagles)[](/r/cowboys)[](/r/nygiants)[](/r/redskins)
+> * [](/r/seahawks)[](/r/49ers)[](/r/azcardinals)[](/r/losangelesrams)
+> * [](/r/ravens)[](/r/steelers)[](/r/bengals)[](/r/browns)
+> * [](/r/tennesseetitans)[](/r/colts)[](/r/jaguars)[](/r/texans)
+> * [](/r/buffalobills)[](/r/miamidolphins)[](/r/patriots)[](/r/nyjets)
+> * [](/r/kansascitychiefs)[](/r/chargers)[](/r/oaklandraiders)[](/r/denverbroncos)

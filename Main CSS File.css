@@ -31,10 +31,12 @@ Colors Used:
 /------------------------------------------------------*/
 
 .side:before {
+  background-color: #0B162A;
   background-image: url(%%lach%%);
-  height: 192px;
-  background-size: cover;
+  height: 275px;
+  background-size: contain;
   background-position: center center;
+  background-repeat: no-repeat;
   content: "";
   display: block;
   position: absolute;
@@ -456,7 +458,7 @@ body:not(.loggedin) #header-bottom-right {
 }
 
 body[class] > .content,body.listing-page[class] > .content {
-  margin: 135px 352px 64px 16px;
+  margin: 60px 352px 64px 16px;
   padding: 0;
 }
 
@@ -537,20 +539,12 @@ body > .content .link .rank,.rank-spacer {
   background-position: -838px -38px;
   padding: 4px 0px 1px 0px;
 }
-
-.arrow.down {
-  height: 20px;
-  background-position: -64px -80px;
-  transition: background-color .25s ease;
-}
-
 .arrow.downmod {
   background-image: url(%%sprites%%);
   background-position: -872px -10px;
   padding: 2px;
   width: 19px;
 }
-
 .arrow.up {
   background-image: url(%%sprites%%);
   background-repeat: no-repeat;
@@ -585,39 +579,82 @@ body > .content .link .rank,.rank-spacer {
   width: 56px;
   height: 56px;
   margin: 0 28px 0 12px;
-  border-radius: 28px;
-}
-
-.thumbnail.default {
-  background: #d2dbe0 url(%%spritesheet%%) -152px -48px;
 }
 
 .thumbnail.self {
-  background: #d2dbe0 url(%%spritesheet%%) -96px -48px;
+  background: url(%%sprites%%) -878px -86px
 }
 
-.thumbnail.image {
-  background: #d2dbe0 url(%%spritesheet%%) -208px -48px;
+a.thumbnail[href*="twitter.com"] img{display: none;}
+a.thumbnail[href*="twitter.com"]{
+  background: url(%%sprites%%) -865px -36px!important;
+  background-color: transparent!important;
 }
 
-.thumbnail.nsfw {
-  background: #e85881 url(%%spritesheet%%) -96px -104px;
+/*STICKY POSTS*/
+.thing.stickied a.thumbnail {
+  background:url(%%sprites%%) -877px -142px no-repeat;
 }
 
-.thumbnail[data-href-url*="reddit.com"] {
-  background: #051C2C url(%%spritesheet%%) -152px -104px;
+.linkflair-qualitypost .thumbnail, .linkflair-gamethread .thumbnail, .linkflair-pregame .thumbnail, .linkflair-important .thumbnail, .linkflair-postgame .thumbnail, .linkflair-modpost .thumbnail, .linkflair-rostermove .thumbnail, .linkflair-draft .thumbnail, .organic-listing .thumbnail {
+  position: relative;
 }
 
-.thumbnail[data-href-url*="reddit.com"] img {
-  display: none;
+.linkflair-qualitypost .thumbnail:before {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  background: white url(%%sprites%%) no-repeat -123px -507px;
 }
-
-.stickied .thumbnail {
-  background-color: #DD4814;
+.linkflair-gamethread .thumbnail:before {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  background: white url(%%sprites%%) no-repeat -180px -511px;
 }
-
-.thumbnail.spoiler {
-  background: #F44336 url(%%spritesheet%%) -208px -148px;
+.linkflair-postgame .thumbnail:before {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  background: white url(%%sprites%%) no-repeat -240px -511px;
+}
+.linkflair-modpost .thumbnail:before {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  background: white url(%%sprites%%) no-repeat -60px -511px;
+}
+.linkflair-rostermove .thumbnail:before {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  background: white url(%%sprites%%) no-repeat -300px -511px;
+}
+.linkflair-pregame .thumbnail:before {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  background: white url(%%sprites%%) no-repeat 0px -511px;
+}
+.linkflair-draft .thumbnail:before {
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 60px;
+  background: white url(%%sprites%%) no-repeat 0 -573px;;
+}
+.organic-listing .thumbnail:before{
+  content: '';
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: white url(%%sprites%%) -363px -511px !important;
 }
 
 .link .entry {
@@ -1032,14 +1069,15 @@ body .content .sitetable .link .title a:hover {
   padding: 1px 6px;
   height: 18px;
   border-radius: 1px;
-  border: 0 solid;
-  color: #fff;
-  font: normal normal bold 13px Lato,Arial,sans-serif;
+  border: 1px solid #d2d2d2;
+  background:#f4f4f4;
+  color: #555;
+  font: normal normal 12px Lato,Arial,sans-serif;
   cursor: default;
   vertical-align: middle;
   position: relative;
   top: -2px;
-  background: #738491;
+  margin-left: 5px;
 }
 
 .linkflair-mod .linkflairlabel {
@@ -1144,7 +1182,10 @@ b {
 
 .link.last-clicked {
   background: rgba(0,0,0,0.04);
-  border: none;
+  border-bottom: 1px solid #d2d2d2;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 
 .thing.link.stickied a.title,.thing.link.stickied li a,.thing.link.stickied .entry li .comments {
@@ -1693,7 +1734,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 }
 
 .side {
-  margin: 398px 16px 108px 0;
+  margin: 481px 16px 108px 0;
   padding: 0;
   background: none;
   width: 320px;
@@ -1721,7 +1762,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
 .side .titlebox h1.redditname {
   margin-bottom: 6px;
   position: absolute;
-  top: 596px;
+  top: 680px;
   z-index: 100;
   font-family: Lato,Arial,sans-serif;
 }
@@ -1735,7 +1776,7 @@ div.commentarea div.RES-keyNav-activeElement .md {
   z-index: 100;
   color: #fff;
   font-size: 12px;
-  top: 623px;
+  top: 704px;
 }
 
 .subscribers span.number:after {
@@ -1783,7 +1824,7 @@ div.titlebox span.word {
   margin: 0;
   position: absolute;
   margin-left: 208px;
-  top: 601px;
+  top: 684px;
   z-index: 100;
 }
 
@@ -1793,50 +1834,18 @@ div.titlebox span.word {
   height: 32px;
   border-radius: 2px;
   line-height: 30px;
-  background-image: none!important;
   padding: 0 12px;
   text-transform: capitalize;
   box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
-  transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1),padding .2s ease,margin .2s ease;
+  background: linear-gradient(to top, #ccc, #fff);
+  color: #051C2C;
 }
 
-.titlebox .fancy-toggle-button .active:hover {
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
-}
-
-.titlebox .fancy-toggle-button .active:active {
-  box-shadow: 0 0 0 rgba(0,0,0,0.0);
-}
-
-.titlebox .fancy-toggle-button .active.add {
-  background: #DD4814;
-  color: #fff;
-}
-
-.titlebox .fancy-toggle-button .active.add:hover {
-  background: #36bb6f;
-}
-
-.titlebox .fancy-toggle-button .active.add:active {
-  background: #189b51;
-  padding-left: 24px;
-  margin-left: -13px;
-  text-align: center;
-}
 
 .titlebox .fancy-toggle-button .active.remove {
-  background: rgba(0,0,0,0.45);
-  color: #fff;
   margin-left: -14px;
   box-shadow: none;
-}
 
-.titlebox .fancy-toggle-button .active.remove:hover {
-  background: rgba(0,0,0,0.75);
-}
-
-.titlebox .fancy-toggle-button .active.remove:active {
-  background: rgba(0,0,0,0.75);
 }
 
 .hover-bubble.multi-selector {
@@ -1857,7 +1866,7 @@ div.titlebox span.word {
 
 #search {
   position: absolute;
-  top: 673px;
+  top: 756px;
   z-index: 1;
   width: 320px;
 }
@@ -2042,7 +2051,7 @@ div.titlebox span.word {
 
 .submit .morelink {
   position: absolute;
-  top: 733px;
+  top: 816px;
   font-size: 0;
   width: 152px;
 }
@@ -2130,21 +2139,12 @@ div.titlebox span.word {
 .side .md table {
   width:100%;
   margin-top: 0;
-<<<<<<< HEAD
 }
 
 .side .md table th {
   background:#d2d2d2;
 }
 
-=======
-}
-
-.side .md table th {
-  background:#d2d2d2;
-}
-
->>>>>>> 0eb0d026667dc8440e2979d8c0f4d3d215e38dbb
 .side .md td,
 .side .md th {
   text-align: center;
@@ -2169,10 +2169,10 @@ div.titlebox span.word {
   width: 100%;
   border-radius: 2px;
   background: #051C2C;
-  font: 12px/42px Lato,Arial,sans-serif;
+  font: 14px/35px Lato,Arial,sans-serif;
   color: #fff;
   display: block;
-  margin: 1.5em 0;
+  margin-top: 1em;
   text-align: center;
   box-shadow: 0 2px 1.5px 0 rgba(0,0,0,.12),0 0 4px 0 rgba(0,0,0,.12);
   transition: box-shadow .2s cubic-bezier(.4,0,1,1),background .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
@@ -2311,6 +2311,7 @@ div.titlebox span.word {
 .commentarea .menuarea .toggle a,.help-hoverable {
   color: #888;
   font-weight: 400;
+  font-size: small;
 }
 
 .commentarea .menuarea .toggle a:hover,.help-hoverable:hover {
@@ -2532,14 +2533,6 @@ body.mod-toolbox .tb-action-button {
   color: #292f34;
 }
 
-.md a {
-  color: #051C2C;
-}
-
-.md a:visited {
-  color: #7D5D8A;
-}
-
 .md pre {
   padding: 8px;
 }
@@ -2631,10 +2624,6 @@ body.mod-toolbox .tb-action-button {
 
 .morecomments a {
   color: #738491;
-}
-
-.comments-page .side,.other-discussions-page .side {
-  margin-top: 400px;
 }
 
 .comments-page .side .linkinfo,.other-discussions-page .side .linkinfo {
@@ -3469,56 +3458,67 @@ body.listing-page > .content,body.other-discussions-page > .content,.comments-pa
   Add your customizations and addons below!
 -------------------------------------------------------------------------- */
 
-.md ul:first-of-type {
-  position:absolute;
-  top: 429px;
-  left: 0;
-  white-space: nowrap;
-  background: #fff;
+.md blockquote {
+  margin: 0;
   padding: 0;
-  margin: 0 0 0 16px;
-  width: auto;
-  right: 0;
-  margin-right: 352px;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
-  border-radius: 2px;
 }
 
-.md ul:first-of-type li {
-  display: inline-block;
-  padding: 1em;
-  width: 14%;
+.md blockquote li {
   text-align: center;
-  border-right: 1px solid #d2d2d2;
-  /*background: url("%%sprites%%") 14px 429px;*/
+  height: 28px;
 }
 
-.md ul:first-of-type li:last-of-type {
-  border: 0;
-}
-
-.md ul:first-of-type li a:first-of-type {
-  display: block;
-}
-.md ul:first-of-type li a[href="/pick"] {
-<<<<<<< HEAD
-  color: #888;
-=======
-  color: #98abba;
->>>>>>> 0eb0d026667dc8440e2979d8c0f4d3d215e38dbb
-}
-.md ul:first-of-type li a[href="/round"] {
-  color: #051C2C;
-  font-weight: 600;
-}
-
-<<<<<<< HEAD
-.md ul:first-of-type li:nth-child(1) {
+.md blockquote li a {
+  padding: 0em 1.5em;
 
 }
 
-=======
->>>>>>> 0eb0d026667dc8440e2979d8c0f4d3d215e38dbb
+.md ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*-------------------------------------------------------
+/                 Related & Social Icons
+/-------------------------------------------------------*/
+
+.side .md a[href*="facebook.com"], .side .md a[href*="instagram.com"], .side .md a[href*="twitter.com"], .side .md a[href*="chicagobears.com"], .side .md a[href*="youtube.com"], .side .md a[href="//nfl.reddit.com"], .side .md a[href="//chicago.reddit.com"],.side .md a[href="//chicagobulls.reddit.com"],.side .md a[href="//hawks.reddit.com"],.side .md a[href="//chicubs.reddit.com"],.side .md a[href="//whitesox.reddit.com"],.side .md a[href="//chicagofire.reddit.com"] {
+    display:inline-block;
+    height:50px;
+    width:50px;
+    background:url(%%sprites%%);
+    text-indent:-9999px;
+    padding-bottom:7px;
+    text-decoration:none;
+    border-radius:0.25em;
+    overflow: hidden;
+}
+
+.side .md ul{
+  list-style-type:none;
+  text-align: center;
+}
+
+.side .md li {
+  display:inline-block;
+}
+
+
+.side .md a[href*="facebook.com"]{background-position: -10px -370px;  }
+.side .md a[href*="//instagram.com"]{background-position: -133px -370px;  }
+.side .md a[href*="//twitter.com"]{background-position: -70px -370px;  }
+.side .md a[href*="chicagobears.com"]{background-position: -262px -370px;  }
+.side .md a[href*="youtube.com"]{background-position: -197px -370px;  }
+
+.side .md a[href*="//nfl.reddit.com"]{background-position: -700px -370px;}
+.side .md a[href*="//chicago.reddit.com"]{background-position: -328px -370px;}
+.side .md a[href*="//chicagobulls.reddit.com"]{background-position: -390px -370px;}
+.side .md a[href*="//hawks.reddit.com"]{background-position: -514px -370px;}
+.side .md a[href*="//chicubs.reddit.com"]{background-position: -452px -370px;}
+.side .md a[href*="//whitesox.reddit.com"]{background-position: -576px -370px;}
+.side .md a[href*="//chicagofire.reddit.com"]{background-position: -638px -370px;}
+
 /*-------------------------------------------------------
 /                       Team Logos
 /-------------------------------------------------------*/
@@ -3605,7 +3605,7 @@ a[href="/AFC"]:hover:before,a[href$="/r/afc"]:hover:before{ background-position:
 
 /*------More FLAIR-----*/
 
-.flair-staley:before, .flair-meatball:before, .flair-koolaid:before, .flair-deepdish:before, .flair-cheesegrater:before, .flair-hotdog:before, .flair-pace:before, .flair-oldlogo:before, .flair-walterpose:before, .flair-homer:before, .flair-smokinjays:before, .flair-flag:before, .flair-helmet:before, .flair-sweater:before, .flair-sweater2:before, .flair-ditkasnoo:before, .flair-gould:before, .flair-halassnoo:before, .flair-martyb:before, .flair-peanut:before, .flair-circlelogo:before, .flair-GSH:before, .flair-B:before, .flair-SBring:before, .flair-long:before, .flair-bearlogo:before, .flair-sunglasses:before, .flair-ditka:before, .flair-hester:before, .flair-halas:before, .flair-lach:before, .flair-WPsmile:before, .flair-SBXX:before, .flair-ball:before, .flair-C2:before, .flair-sidehelmet:before, .flair-C3:before, .flair-logozoom:before, .flair-sayers:before, .flair-monsters:before, .flair-actualpeanut:before, .flair-tillman:before, .flair-grange:before, .flair-actualbear:before, .flair-singletary:before, .flair-superfans:before, .flair-fridge:before, .flair-pixelpayton:before, .flair-hurricaneditka:before, .flair-jayshair:before, .flair-kylelong:before, .flair-mcmahon:before, .flair-luckman:before, .flair-sox:before, .flair-cubs:before, .flair-bulls:before, .flair-hawks:before, .flair-butkus:before, .flair-italianbeef:before, .flair-trubisky:before, .flair-howard:before, .flair-cohen:before, .flair-floyd:before {
+.flair-staley:before, .flair-meatball:before, .flair-koolaid:before, .flair-deepdish:before, .flair-cheesegrater:before, .flair-hotdog:before, .flair-pace:before, .flair-oldlogo:before, .flair-walterpose:before, .flair-homer:before, .flair-smokinjays:before, .flair-smokinjay:before, .flair-airjeffery:before, .flair-flag:before, .flair-helmet:before, .flair-sweater:before, .flair-sweater2:before, .flair-AJcatch:before, .flair-blackunicorn:before, .flair-ditkasnoo:before, .flair-gould:before, .flair-halassnoo:before, .flair-martyb:before, .flair-peanut:before, .flair-circlelogo:before, .flair-GSH:before, .flair-B:before, .flair-SBring:before, .flair-long:before, .flair-jeffery:before, .flair-bearlogo:before, .flair-sunglasses:before, .flair-forte:before, .flair-ditka:before, .flair-hester:before, .flair-jay:before, .flair-halas:before, .flair-coachfox:before, .flair-lach:before, .flair-WPsmile:before, .flair-SBXX:before, .flair-blowup:before, .flair-ball:before, .flair-C2:before, .flair-sidehelmet:before, .flair-C3:before, .flair-logozoom:before, .flair-sayers:before, .flair-monsters:before, .flair-actualpeanut:before, .flair-tillman:before, .flair-grange:before, .flair-actualbear:before, .flair-singletary:before, .flair-superfans:before, .flair-fridge:before, .flair-pixelpayton:before, .flair-hurricaneditka:before, .flair-jayshair:before, .flair-kylelong:before, .flair-mcmahon:before, .flair-luckman:before, .flair-sox:before, .flair-cubs:before, .flair-bulls:before, .flair-hawks:before, .flair-ditkaplayer:before, .flair-butkus:before, .flair-italianbeef:before, .flair-madman:before, .flair-trubisky:before, .flair-howard:before, .flair-smokinjay:before, .flair-cohen:before, .flair-floyd:before {
     position:absolute;
     top:-5px;left:-36px;
     float:left;
@@ -3625,10 +3625,14 @@ a[href="/AFC"]:hover:before,a[href$="/r/afc"]:hover:before{ background-position:
 .flair-walterpose:before {background-position: -161px -92px; width: 28px;}
 .flair-homer:before {background-position: -202px -93px; width: 20px;}
 .flair-smokinjays:before {background-position: -570px -92px; width: 49px;}
+.flair-smokinjay:before {background-position: -4px -139px; width: 30px;}
+.flair-airjeffery:before {background-position: -45px -139px; width: 31px;}
 .flair-flag:before {background-position: -598px -183px; width: 52px;}
 .flair-helmet:before {background-position: -86px -139px; width: 39px;}
 .flair-sweater:before {background-position: -133px -139px; width: 22px;}
 .flair-sweater2:before {background-position: -169px -139px; width: 31px;}
+.flair-AJcatch:before {background-position: -213px -139px; width: 34px;}
+.flair-blackunicorn:before {background-position: -258px -139px; width: 28px;}
 .flair-ditkasnoo:before {background-position: -295px -140px; width: 28px;}
 .flair-gould:before {background-position: -333px -139px; width: 42px;}
 .flair-halassnoo:before {background-position: -388px -138px; width: 23px;}
@@ -3639,14 +3643,19 @@ a[href="/AFC"]:hover:before,a[href$="/r/afc"]:hover:before{ background-position:
 .flair-B:before {background-position: -231px -93px; width: 31px;}
 .flair-SBring:before {background-position: -271px -93px; width: 33px;}
 .flair-long:before {background-position: -316px -92px; width: 28px;}
+.flair-jeffery:before {background-position: -352px -92px; width: 38px;}
 .flair-bearlogo:before {background-position: -397px -92px; width: 32px;}
 .flair-sunglasses:before {background-position: -438px -93px; width: 40px;}
+.flair-forte:before {background-position: -490px -92px; width: 26px;}
 .flair-ditka:before {background-position: -529px -92px; width: 24px;}
 .flair-hester:before {background-position: 0 -42px; width: 31px;}
+.flair-jay:before {background-position: -613px -139px; width: 45px;}
 .flair-halas:before {background-position: -40px -230px; width: 40px;}
+.flair-coachfox:before {background-position: -82px -230px; width: 34px;}
 .flair-lach:before {background-position: -123px -230px; width: 40px;}
 .flair-WPsmile:before {background-position: -41px -47px; width: 29px;}
 .flair-SBXX:before {background-position: -79px -46px; width: 53px; }
+.flair-blowup:before {background-position: -140px -46px; width: 29px;}
 .flair-ball:before {background-position: -180px -46px; width: 36px;}
 .flair-C2:before {background-position: -224px -46px; width: 35px; }
 .flair-sidehelmet:before {background-position: -272px -46px; width: 30px;}
@@ -3663,6 +3672,7 @@ a[href="/AFC"]:hover:before,a[href$="/r/afc"]:hover:before{ background-position:
 .flair-fridge:before {background-position: 0 -230px; width: 25px;}
 .flair-pixelpayton:before {background-position: -176px -232px; width: 30px;}
 .flair-hurricaneditka:before {background-position: -216px -232px; width: 31px;}
+.flair-jayshair:before {background-position: -257px -229px; width: 38px;}
 .flair-kylelong:before {background-position: -302px -229px; width: 42px;}
 .flair-mcmahon:before {background-position: -351px -232px; width: 48px;}
 .flair-luckman:before {background-position: -410px -231px; width: 42px;}
@@ -3670,18 +3680,51 @@ a[href="/AFC"]:hover:before,a[href$="/r/afc"]:hover:before{ background-position:
 .flair-cubs:before {background-position: -499px -232px; width: 33px;}
 .flair-bulls:before {background-position: -543px -229px; width: 36px;}
 .flair-hawks:before {background-position: -588px -232px; width: 39px;}
+.flair-ditkaplayer:before {background-position: -640px -228px; width: 34px;}
 .flair-butkus:before {background-position: -635px -93px; width: 25px;}
 .flair-italianbeef:before {background-position: -316px -269px; width: 65px;}
+.flair-madman:before {background-position: -397px -272px; width: 21px;}
 .flair-trubisky:before {background-position: -432px -272px; width: 40px;}
 .flair-howard:before {background-position: -478px -272px; width: 33px;}
 .flair-cohen:before {background-position: -513px -272px; width: 40px;}
 .flair-floyd:before {background-position: -555px -272px; width: 40px;}
+.flair-smokinjay:before {background-position: -4px -139px; width: 30px;}
+.content .flair-meatball:hover {text-indent: 1px;}
+.content .flair-koolaid:hover {text-indent: 8px;}
+.content .flair-deepdish:hover {text-indent: 14px;}
+.content .flair-cheesegrater:hover {text-indent: 4px;}
+.content .flair-hotdog:hover {text-indent: 19px;}
+.content .flair-pace:hover {text-indent: 9px;}
+.content .flair-smokinjays:hover {text-indent: 13px;}
+.content .flair-flag:hover {text-indent: 16px;}
+.content .flair-helmet:hover {text-indent: 3px;}
+.content .flair-gould:hover {text-indent: 6px;}
+.content .flair-GSH:hover {text-indent: 19px;}
+.content .flair-sunglasses:hover {text-indent: 4px;}
+.content .flair-jay:hover {text-indent: 9px;}
+.content .flair-halas:hover {text-indent: 4px;}
+.content .flair-coachfox:hover {text-indent: 34px;}
+.content .flair-lach:hover {text-indent: 4px;}
+.content .flair-SBXX:hover {text-indent: 17px; }
+.content .flair-sayers:hover {text-indent: 15px;}
+.content .flair-monsters:hover {text-indent: 2px;}
+.content .flair-actualpeanut:hover {text-indent: 30px;}
+.content .flair-tillman:hover {text-indent: 23px;}
+.content .flair-grange:hover {text-indent: 35px;}
+.content .flair-actualbear:hover {text-indent: 6px;}
+.content .flair-singletary:hover {text-indent: 35px;}
+.content .flair-superfans:hover {text-indent: 65px;}
+.content .flair-kylelong:hover {text-indent: 6px;}
+.content .flair-mcmahon:hover {text-indent: 12px;}
+.content .flair-luckman:hover {text-indent: 6px;}
+.content .flair-italianbeef:hover {text-indent: 29px}
 .content .flair-meatball {width: 1px;}
 .content .flair-koolaid {width: 8px;}
 .content .flair-deepdish {width: 14px;}
 .content .flair-cheesegrater {width: 4px;}
 .content .flair-hotdog {width: 19px;}
 .content .flair-pace {width: 9px;}
+.content .flair-smokinjays {width: 13px;}
 .content .flair-flag {width: 16px;}
 .content .flair-helmet {width: 3px;}
 .content .flair-gould {width: 6px;}
@@ -3739,3 +3782,9 @@ a[href="/AFC"]:hover:before,a[href$="/r/afc"]:hover:before{ background-position:
   }
 }
 */
+
+@media screen and (min-width: 768px) {
+  .side .md a[href*="/r/"] {
+    font-size: 0;
+  }
+}

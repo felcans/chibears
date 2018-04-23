@@ -7,6 +7,8 @@ Colors Used:
 
 */
 
+
+
 /*---------------------------------------------------------------------------|
 /                                                                            |
 /                            THINGS THAT CHANGE                              |
@@ -19,7 +21,7 @@ Colors Used:
 
 /*This is for a header image that can be changed easily. Image should be at least 1920px wide and 275px high.*/
 #header{
-    background:url(%%week11-2017%%) no-repeat top;
+    background:url(%%2018schedule%%) no-repeat top;
     background-size:cover;
     height:350px;
     width:100%;
@@ -28,9 +30,6 @@ Colors Used:
     transition: all 0.2s ease-in-out
 }
 
-#header:hover {
-    background:url(%%week11-spoof%%) no-repeat top;
-}
 
 /*This is the caption for the header image. This text is changed in the subreddit settings. Keep it semi-short. For longer captions, make the width wider and/or the top property a higher em*/
 
@@ -52,8 +51,8 @@ Colors Used:
 
 /*Width HAS to be 275px - margin-left usually 13*/
 .side .spacer:nth-of-type(1):before {
-    content: url(%%howardtd%%);
-    margin-left:11px;
+    content: url(%%draftday%%);
+    margin-left:14px;
 }
 /*Caption*/
 .side .spacer:nth-of-type(1):after{
@@ -119,7 +118,7 @@ a[href *= '/we-won'] {
 /            Back to Front Page of CHIBEARS
 /-------------------------------------------------------*/
 
-.side .md a[href$="/r/CHIBears"]{
+.side .md a[href*="/r/CHIBears"] {
     background: url(%%sprite%%) -876px -212px no-repeat;
     display:block;
     width:65px;
@@ -2331,7 +2330,7 @@ line-height:25px;
 
 /*------More FLAIR-----*/
 
-.flair-staley:before, .flair-meatball:before, .flair-koolaid:before, .flair-deepdish:before, .flair-cheesegrater:before, .flair-hotdog:before, .flair-pace:before, .flair-oldlogo:before, .flair-walterpose:before, .flair-homer:before, .flair-smokinjays:before, .flair-smokinjay:before, .flair-airjeffery:before, .flair-flag:before, .flair-helmet:before, .flair-sweater:before, .flair-sweater2:before, .flair-AJcatch:before, .flair-blackunicorn:before, .flair-ditkasnoo:before, .flair-gould:before, .flair-halassnoo:before, .flair-martyb:before, .flair-peanut:before, .flair-circlelogo:before, .flair-GSH:before, .flair-B:before, .flair-SBring:before, .flair-long:before, .flair-jeffery:before, .flair-bearlogo:before, .flair-sunglasses:before, .flair-forte:before, .flair-ditka:before, .flair-hester:before, .flair-jay:before, .flair-halas:before, .flair-coachfox:before, .flair-lach:before, .flair-WPsmile:before, .flair-SBXX:before, .flair-blowup:before, .flair-ball:before, .flair-C2:before, .flair-sidehelmet:before, .flair-C3:before, .flair-logozoom:before, .flair-sayers:before, .flair-monsters:before, .flair-actualpeanut:before, .flair-tillman:before, .flair-grange:before, .flair-actualbear:before, .flair-singletary:before, .flair-superfans:before, .flair-fridge:before, .flair-pixelpayton:before, .flair-hurricaneditka:before, .flair-jayshair:before, .flair-kylelong:before, .flair-mcmahon:before, .flair-luckman:before, .flair-sox:before, .flair-cubs:before, .flair-bulls:before, .flair-hawks:before, .flair-ditkaplayer:before, .flair-butkus:before, .flair-italianbeef:before, .flair-madman:before, .flair-trubisky:before, .flair-howard:before, .flair-cohen:before, .flair-floyd:before {
+.flair-staley:before, .flair-meatball:before, .flair-koolaid:before, .flair-deepdish:before, .flair-cheesegrater:before, .flair-hotdog:before, .flair-pace:before, .flair-oldlogo:before, .flair-walterpose:before, .flair-homer:before, .flair-smokinjays:before, .flair-smokinjay:before, .flair-airjeffery:before, .flair-flag:before, .flair-helmet:before, .flair-sweater:before, .flair-sweater2:before, .flair-AJcatch:before, .flair-blackunicorn:before, .flair-ditkasnoo:before, .flair-gould:before, .flair-halassnoo:before, .flair-martyb:before, .flair-peanut:before, .flair-circlelogo:before, .flair-GSH:before, .flair-B:before, .flair-SBring:before, .flair-long:before, .flair-jeffery:before, .flair-bearlogo:before, .flair-sunglasses:before, .flair-forte:before, .flair-ditka:before, .flair-hester:before, .flair-jay:before, .flair-halas:before, .flair-coachfox:before, .flair-lach:before, .flair-WPsmile:before, .flair-SBXX:before, .flair-blowup:before, .flair-ball:before, .flair-C2:before, .flair-sidehelmet:before, .flair-C3:before, .flair-logozoom:before, .flair-sayers:before, .flair-monsters:before, .flair-actualpeanut:before, .flair-tillman:before, .flair-grange:before, .flair-actualbear:before, .flair-singletary:before, .flair-superfans:before, .flair-fridge:before, .flair-pixelpayton:before, .flair-hurricaneditka:before, .flair-jayshair:before, .flair-kylelong:before, .flair-mcmahon:before, .flair-luckman:before, .flair-sox:before, .flair-cubs:before, .flair-bulls:before, .flair-hawks:before, .flair-ditkaplayer:before, .flair-butkus:before, .flair-italianbeef:before, .flair-madman:before, .flair-trubisky:before, .flair-howard:before, .flair-cohen:before, .flair-floyd:before, .flair-firefox:before,.flair-qpoty:before,.flair-qpoty2:before,.flair-qcoty:before {
     position:absolute;
     top:-5px;left:-36px;
     float:left;
@@ -2417,6 +2416,10 @@ line-height:25px;
 .flair-howard:before {background-position: -478px -272px; width: 33px;}
 .flair-cohen:before {background-position: -513px -272px; width: 40px;}
 .flair-floyd:before {background-position: -555px -272px; width: 40px;}
+.flair-firefox:before {background-position: -600px -273px; width: 35px;}
+.flair-qpoty:before {background-position: -330px -307px; width: 65px;}
+.flair-qcoty:before {background-position: -488px -307px; width: 65px;}
+.flair-qpoty2:before {background-position: -408px -307px; width: 65px;}
 /*
 .flair-staley:hover {text-indent:34px;}
 */
@@ -2602,6 +2605,18 @@ line-height:25px;
 .content .flair-italianbeef {width: 29px;}
 
 
+
+.content .flair-qpoty:hover,
+.content .flair-qpoty2:hover,
+.content .flair-qcoty:hover {
+    padding: 0 5px 0 33px;
+}
+
+.flair-qpoty,
+.flair-qpoty2,
+.flair-qcoty {
+    margin-right: 29px;
+}
 
 /*-----------------------------------------------------
 /                   Link Flair

@@ -28,10 +28,10 @@
 - gould *--
 
 
-** FIX LIST **
+** TODO LIST **
 - mod notification C logo
 - move tiny icons to enlarge pics from sprite sheet
 - move sprite sheet over to spirtes
-- post icons (announcements, quality posts, spoilers)
 
 - submit link/text/msg mods
+- create mobile header

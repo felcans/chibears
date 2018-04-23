@@ -678,14 +678,6 @@ body .content .sitetable .link .title a:hover {
   color: #051C2C;
 }
 
-.content .thing .title:visited,.content .thing.visited .title {
-  color: #738491;
-}
-
-.thing .title.loggedin.click:visited,.thing .title.click:visited {
-  color: #051C2C;
-}
-
 .link .domain {
   visibility: hidden;
 }

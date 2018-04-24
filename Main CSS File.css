@@ -18,7 +18,7 @@ Colors Used:
 /--------------------------------------------------------*/
 
 #header {
-  background: url(%%bearspoly%%) center center / cover;
+  background: url(%%2018draft%%) center center / cover;
   margin-top: 23px;
   height: 350px;
   border: none;
@@ -32,7 +32,7 @@ Colors Used:
 
 .side:before {
   background-color: #0B162A;
-  background-image: url(%%lach%%);
+  background-image: url(%%hesterforte%%);
   height: 275px;
   background-size: contain;
   background-position: center center;
@@ -1416,8 +1416,7 @@ body > .content .link.compressed .midcol {
 }
 
 .flairselector li a,.flairselector form .flairselection a.author {
-  color: #738491!important;
-  font-size: 11px;
+  display: none;
 }
 
 .unvotable-message {
@@ -3160,6 +3159,7 @@ ul.image-preview-list li {
 }
 
 .flair {
+  position: relative;
   border: none;
   border-radius: 0;
   font: normal 12px Lato,Arial,sans-serif;
@@ -3167,10 +3167,11 @@ ul.image-preview-list li {
   color: #888;
   padding-left: 0;
   margin-right: inherit;
+  text-indent: -9999px; 
 }
 
 .link .flair {
-  font-size: 12px;
+  display: none;
 }
 
 .flair:before {

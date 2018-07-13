@@ -1,12 +1,11 @@
-** SWAP CHECKLIST **
+** TODO LIST **
+- Vic Nagy Flairs
+- move tiny icons to enlarge pics from sprite sheet
 
-- spritesheet
-- sprites
-- noresults
-- sidebar h6 with links
-- style sheet
-- footer img
-- sidebar img
+Plat - Paul
+Han - Ty
+Sorry - Pat
+Turner - Turner
 
 
 *** FLAIR REMOVAL ***
@@ -28,10 +27,3 @@
 - gould *--
 
 
-** TODO LIST **
-- mod notification C logo
-- move tiny icons to enlarge pics from sprite sheet
-- move sprite sheet over to spirtes
-
-- submit link/text/msg mods
-- create mobile header

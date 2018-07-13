@@ -1,31 +1,22 @@
 [](//www.reddit.com/r/CHIBears)
 
 ### Welcome to Reddit's home for the Chicago Bears
+###[Message Mods](https://www.reddit.com/message/compose?to=%2Fr%2FCHIBears)
 ###[Subreddit Rules](https://www.reddit.com/r/chibears/wiki/rules)
 ###[FAQ](https://www.reddit.com/r/chibears/wiki/faq)
-###[Message Mods](https://www.reddit.com/message/compose?to=%2Fr%2FCHIBears)
+###[History of the Bears](https://www.reddit.com/r/chibears/wiki/history)
+###[Miscellaneous Info](https://www.reddit.com/r/chibears/wiki/misc)
+###[Multi-Media](https://www.reddit.com/r/chibears/wiki/multimedia)
 ###[Discord](https://discord.gg/A6RUrXp)
 
 [ ](http://www.reddit.com)
-
 
 &nbsp;
 
 ######[Upcoming Dates](#top)
 | Date | Event |
 |-----|-----|
-| 2/13 | Clubs may sign CFL Free Agents |
-| 2/20 | Clubs may designate Franchise Tag |
-| 2/27-3/5 | Combine |
-| 3/6 4 pm | Deadline for Franchise Tag |
-| 3/14 4 pm | Deadline for RFA offers, option clauses, and 2017 contracts expire |
-| 3/14 4 pm | Free Agency starts |
-| 4/2 | Clubs with new head coaches may start offseason work outs |
-| 4/14-23 | NFL Schedule released |
-| 4/20 | Deadline for RFAs to sign offer sheets |
-| 4/26-28 | Draft |
-| 5/4-7 | Clubs may hold their one 3 day rookie minicamps |
-| 5/11-14 | Clubs may hold their one 3 day rookie minicamps |
+| 5/11-13 | 3 day rookie minicamp |
 | 7/16 | Deadline for tagged players to reach a deal |
 | 8/2 | Hall of Fame Game |
 | 8/7 | Deadline for contract players to report |
@@ -34,15 +25,15 @@
 &nbsp;
 
 ######[Draft Picks](#top)
-| Round | Pick |
-| ---- | ---- |
-| 1 | 8 |
-| 2 | 39 |
-| 4 | 105 |
-| 4 | 115 |
-| 5 | 145 |
-| 6 | 181 |
-| 7 | 224 |
+| Round | Player | Position | School
+| ---- | ---- |-----|-----|
+| R1.P8 | Roquan Smith | LB | Georgia
+| R2.P39 | James Daniels | C | Iowa
+| R2.P51 | Anthony Miller | WR | Memphis
+| R4.P115 | Joel Iyiegbuniwe | ILB | Western Kentucky 
+| R5.P145 | Bilal Nichols | DT | Delaware 
+| R6.P181 | Kylie Fitts | LB | Utah |
+| R7.P224 | Javon Wims | WR | Georgia |
 
 &nbsp;
 
@@ -103,11 +94,22 @@
 
 ######[Around The NFL](#top)
 ##[](/r/nfl )
+
 > * [](/r/chibears)[](/r/minnesotavikings)[](/r/detroitlions)[](/r/greenbaypackers)
-> * [](/r/panthers)[](/r/saints)[](/r/falcons)[](/r/buccaneers)
-> * [](/r/eagles)[](/r/cowboys)[](/r/nygiants)[](/r/redskins)
-> * [](/r/seahawks)[](/r/49ers)[](/r/azcardinals)[](/r/losangelesrams)
+&nbsp;
 > * [](/r/ravens)[](/r/steelers)[](/r/bengals)[](/r/browns)
-> * [](/r/tennesseetitans)[](/r/colts)[](/r/jaguars)[](/r/texans)
-> * [](/r/buffalobills)[](/r/miamidolphins)[](/r/patriots)[](/r/nyjets)
+&nbsp;
+> * [](/r/seahawks)[](/r/49ers)[](/r/azcardinals)
+[](/r/losangelesrams)
+&nbsp;
 > * [](/r/kansascitychiefs)[](/r/chargers)[](/r/oaklandraiders)[](/r/denverbroncos)
+&nbsp;
+> * [](/r/panthers)[](/r/saints)[](/r/falcons)[](/r/buccaneers)
+&nbsp;
+> * [](/r/tennesseetitans)[](/r/colts)[](/r/jaguars)[](/r/texans)
+&nbsp;
+> * [](/r/eagles)[](/r/cowboys)[](/r/nygiants)[](/r/redskins)
+&nbsp;
+> * [](/r/buffalobills)[](/r/miamidolphins)[](/r/patriots)
+[](/r/nyjets)
+&nbsp;

@@ -1,1 +1,1 @@
-# Chibears Reddit shiz
+# Chibears Reddit
